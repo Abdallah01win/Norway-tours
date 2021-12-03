@@ -7,21 +7,57 @@
 @mixin button($btn-bg-color, $btn-text-color, $font-size) {
     &:link,
     &:visited {
+        display: inline-block;
         font-size: $font-size;
+        font-weight: 600;
         text-transform: uppercase;
         padding: 1.5rem 4rem;
         border-radius: 20rem;
-        background-color: $btn-bg-color;
+        background: $btn-bg-color;
         color: $btn-text-color;
     }
     &:hover {
         transform: translateY(-0.3rem);
-        box-shadow: 0 1rem 2rem rgba($color: #000000,
-        $alpha: 0.5);
+        box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.8);
     }
     &:active {
         transform: translateY(-0.1rem);
-        box-shadow: 0 0.5rem 1rem rgba($color: #000000,
-        $alpha: 0.5);
+        box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.8);
+    }
+}
+
+@mixin grid($columns) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat($columns, 1fr);
+    column-gap: 4rem;
+    row-gap: 4rem;
+
+    @media (max-width: 75em) {
+        grid-gap: 4.4rem;
+    }
+    @media (max-width: 27.2em) {
+        grid-template-columns: 1fr;
+    }
+}
+@mixin gradiant {
+    background-image: $G-gradiant;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@mixin sec-heading($font-size, $marg-bottom) {
+    text-transform: uppercase;
+    font-size: $font-size;
+    font-weight: 700;
+    margin-bottom: $marg-bottom;
+}
+@mixin primary-headig($font-size, $marg-bottom) {
+    @include sec-heading($font-size, $marg-bottom);
+    @include gradiant();
+    text-align: center;
+    transition: all 300ms ease-out;
+    backface-visibility: hidden;
+    &:hover{
+        transform: scale(1.08);
     }
 }
