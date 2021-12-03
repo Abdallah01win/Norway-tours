@@ -1,0 +1,20 @@
+{
+    "Fjiorn" :{
+        "name" : "tour 1",
+        "discription" : "some Text",
+        "price" : "$550",
+        "people" : "6"
+    },
+    "tour 2" :{
+        "name" : "tour 2",
+        "discription" : "some Text",
+        "price" : "$550",
+        "people" : "6"
+    },
+    "tour 3" :{
+        "name" : "tour 3",
+        "discription" : "some Text",
+        "price" : "$550",
+        "people" : "6"
+    }
+}
