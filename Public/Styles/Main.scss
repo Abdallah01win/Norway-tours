@@ -90,9 +90,36 @@ html {
             }
         }
         #img-box{
+            position: relative;
+            &:hover{ // when the box is hovered scale down none hover chlid elements
+                img:not(:hover){
+                    transform: scale(0.9);
+                }
+            }
             img{
-                max-width: 30rem;
-                height: 20rem;
+                max-width: 28rem;
+                height: 18rem;
+                position: absolute;
+                border-radius: 2px;
+                z-index: 3;
+                transition: all 300ms ease-out;
+                &:hover{
+                    z-index: 10;
+                    transform: scale(1.1);
+                }
+                &:first-of-type{
+                    left: 0;
+                    top: -14rem;
+                }
+                &:nth-of-type(2){
+                    top: -10rem;
+                    left: 20rem;
+                }
+                &:last-of-type{
+                    top: -2rem;
+                    left: 20%;
+                    
+                }
             }
         }
     }
