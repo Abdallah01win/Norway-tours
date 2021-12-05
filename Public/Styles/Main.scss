@@ -17,7 +17,7 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     body {
-        font-family: "lato", sans-serif;
+        font-family: "inter", sans-serif;
         font-weight: 400;
         color: $textColor;
         padding: 3rem;
@@ -28,21 +28,42 @@ html {
 
         // --- Header Section --- //
 #header {
-    height: 95vh;
+    height: 92vh;
     background-image: url(../Assets/Hero-img.jpg);
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    @include box-shadow();
+
+    #nav{
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        font-size: 2rem;
+        padding: 4rem 8rem;
+        #logo{
+        margin-right: auto;
+        }
+        #nav-list{
+            display: flex;
+            .nav-list-item{
+                padding: 0px  2rem ;
+                &:last-of-type{
+                    padding: 0px 0px 0px 1rem;
+                }
+
+            }
+        }
+    }
 
     #text-box {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         
         .heading-primary {
-            color: #fff;
+            color: $textColor;
             text-transform: uppercase;
             backface-visibility: hidden; // prevents an animated element from jumping upwards before the animation finishes
             margin-bottom: 6rem;
@@ -67,8 +88,7 @@ html {
 
 #section-a{
     background: $sec-dark;
-    padding: 25rem 10%;
-    margin-top: -20vh;
+    padding: 12.8rem 10%;
     
     #sec-heading{
         @include primary-headig(3.5rem, 8rem);
@@ -97,8 +117,8 @@ html {
                 }
             }
             img{
-                max-width: 28rem;
-                height: 18rem;
+                max-width: 55%;
+                max-height: 53rem;
                 position: absolute;
                 border-radius: 2px;
                 z-index: 3;
@@ -106,19 +126,15 @@ html {
                 &:hover{
                     z-index: 10;
                     transform: scale(1.1);
+                    @include box-shadow();
                 }
                 &:first-of-type{
                     left: 0;
                     top: -14rem;
                 }
-                &:nth-of-type(2){
-                    top: -10rem;
-                    left: 20rem;
-                }
                 &:last-of-type{
-                    top: -2rem;
-                    left: 20%;
-                    
+                    top: -4rem;
+                    left: 22rem;
                 }
             }
         }
