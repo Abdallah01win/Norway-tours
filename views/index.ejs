@@ -58,24 +58,24 @@
         <div id="grid-container">
         <% for (const tour in dataBase) { %>
             <figure class="tour-card">
-                <div class="tour-card--img">
+                <div class="tour-card__img">
                     <img src="<%=dataBase[tour]['imgURL']%>" alt="card image">
                 </div>
-                <div class="tour-card--title">
+                <div class="tour-card__title">
                     <%=dataBase[tour]['name']%>
                 </div>
-                <ul class="tour-card--features">
+                <ul class="tour-card__features">
                 <% for (const feature in dataBase[tour]['features']){%>
-                        <li class="tour-card--features--feature">
+                        <li class="tour-card__features__feature">
                         <%= dataBase[tour]['features'][feature] %>
                         </li>
                         <% } %> 
                 </ul>
-                <a href="#" class="tour-card--button">Book Now</a>
-                <a href="#" class="tour-card--button">Learn More</a>
+                <a href="/payment" class="tour-card__button">Book Now</a>
+                <a href="/tours" class="tour-card__button">Details</a>
             </figure>
         <% } %>
-    </div>
+    </div> 
     </section>
 </body>
 

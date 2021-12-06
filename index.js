@@ -1,11 +1,19 @@
 const express = require('express');
 const app = express();
-const dataBase = require('./tours.json')
+const dataBase = require('./tours.json');
+const path = require('path');
 
 //setup EJS 
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 app.get('/', (req, res) => {
     res.render('index', { dataBase });
+})
+app.get('/tours', (req, res) =>{
+    res.render('tours', { dataBase })
+})
+app.get('/payment', (req, res) =>{
+    res.render('payment', { dataBase })
 })
 
 function randomNum(max) {
