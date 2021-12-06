@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="Styles/Main.min.css">
     <title>Norway Tours</title>
 </head>
+
 <body>
     <!-- --- Header Section --- -->
     <header id="header">
@@ -30,15 +32,18 @@
         </div>
     </header>
     <!-- data accesing templet -->
-    <!-- <div> <%= Fjiorn.date %> </div>  -->
+    <!-- <div>  Fjiorn.date %> </div>  -->
 
     <section id="section-a">
-        <h2 id="sec-heading">Exciting Tours For Advanturous People</h2>
+        <h2 class="sec-heading">Exciting Tours For Advanturous People</h2>
         <div id="grid-container">
             <div id="text-box">
                 <h3>Discover Norway's miracullas nature</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste itaque voluptatibus commodi ut dicta provident amet architecto saepe, repellat nobis illum dolorem nesciunt libero adipisci labore dolores?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste itaque voluptatibus commodi ut dicta provident amet architecto saepe.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste itaque voluptatibus commodi ut
+                    dicta provident amet architecto saepe, repellat nobis illum dolorem nesciunt libero adipisci labore
+                    dolores?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste itaque voluptatibus commodi ut
+                    dicta provident amet architecto saepe.</p>
                 <a href="#">Learn More &rarr;</a>
             </div>
             <div id="img-box">
@@ -47,5 +52,31 @@
             </div>
         </div>
     </section>
+
+    <section id="section-b">
+        <h3 class="sec-heading">Make the most out of Norway's heavens</h3>
+        <div id="grid-container">
+        <% for (const tour in dataBase) { %>
+            <figure class="tour-card">
+                <div class="tour-card--img">
+                    <img src="<%=dataBase[tour]['imgURL']%>" alt="card image">
+                </div>
+                <div class="tour-card--title">
+                    <%=dataBase[tour]['name']%>
+                </div>
+                <ul class="tour-card--features">
+                <% for (const feature in dataBase[tour]['features']){%>
+                        <li class="tour-card--features--feature">
+                        <%= dataBase[tour]['features'][feature] %>
+                        </li>
+                        <% } %> 
+                </ul>
+                <a href="#" class="tour-card--button">Book Now</a>
+                <a href="#" class="tour-card--button">Learn More</a>
+            </figure>
+        <% } %>
+    </div>
+    </section>
 </body>
+
 </html>

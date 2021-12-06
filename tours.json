@@ -1,20 +1,32 @@
 {
     "Fjiorn": {
+        "imgURL" : "",
         "name" : "tour 1",
-        "discription" : "some Text",
-        "price" : "$550",
-        "people" : "6"
+        "features" : {
+            "distance": "100km",
+            "destination": "some place",
+            "people" : "6 people"
+        },
+        "price" : "$550"
     },
     "tour 2" :{
+        "imgURL" : "",
         "name" : "tour 2",
-        "discription" : "some Text",
-        "price" : "$550",
-        "people" : "6"
+        "features" : {
+            "distance": "100km",
+            "destination": "some place",
+            "people" : "6 people"
+        },
+        "price" : "$550"
     },
     "tour 3" :{
+        "imgURL" : "",
         "name" : "tour 3",
-        "discription" : "some Text",
-        "price" : "$550",
-        "people" : "6"
+        "features" : {
+            "distance": "100km",
+            "destination": "some place",
+            "people" : "6 people"
+        },
+        "price" : "$550"
     }
 }

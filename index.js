@@ -5,7 +5,7 @@ const dataBase = require('./tours.json')
 //setup EJS 
 app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
-    res.render('index', { ...dataBase });
+    res.render('index', { dataBase });
 })
 
 function randomNum(max) {

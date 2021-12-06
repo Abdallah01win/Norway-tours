@@ -90,7 +90,7 @@ html {
     background: $sec-dark;
     padding: 12.8rem 10%;
     
-    #sec-heading{
+    .sec-heading{
         @include primary-headig(3.5rem, 8rem);
     }
     #grid-container{
@@ -140,3 +140,23 @@ html {
         }
     }
 }
+
+#section-b{
+    background: $accent-dark;
+    padding: 12.8rem 10%;
+    box-shadow: 0 0rem 2rem rgba($color: #000000, $alpha: 0.8);
+    z-index: 10;
+    .sec-heading{
+        @include primary-headig(3.5rem, 8rem)
+    }
+    #grid-container{
+        @include grid(3);
+    }
+    
+}
+/*#section-c{
+    z-index: -1;
+    position: relative;
+    background: $sec-dark;
+    height: 95vh;
+}*/
