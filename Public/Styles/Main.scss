@@ -22,11 +22,10 @@ html {
         color: $textColor;
         padding: 3rem;
         background: $main-dark;
-       
     }
 }
 
-        // --- Header Section --- //
+// --- Header Section --- //
 #header {
     height: 92vh;
     background-image: url(../Assets/Hero-img.jpg);
@@ -34,23 +33,22 @@ html {
     background-position: center;
     @include box-shadow();
 
-    #nav{
+    #nav {
         display: flex;
         align-items: center;
         height: 5rem;
         font-size: 2rem;
         padding: 4rem 8rem;
-        #logo{
-        margin-right: auto;
+        #logo {
+            margin-right: auto;
         }
-        #nav-list{
+        #nav-list {
             display: flex;
-            .nav-list-item{
-                padding: 0px  2rem ;
-                &:last-of-type{
+            .nav-list-item {
+                padding: 0px 2rem;
+                &:last-of-type {
                     padding: 0px 0px 0px 1rem;
                 }
-
             }
         }
     }
@@ -61,7 +59,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        
+
         .heading-primary {
             color: $textColor;
             text-transform: uppercase;
@@ -71,67 +69,68 @@ html {
                 display: block;
                 @include heading(6rem, 400, 3.5rem);
                 margin-bottom: 2rem;
-                animation: moveinright 1000ms 200ms; 
+                animation: moveinright 1000ms 200ms;
             }
             .HP-secondary {
                 display: block;
-                @include heading(2rem, 700, 1.74rem);           
+                @include heading(2rem, 700, 1.74rem);
                 animation: moveinleft 1000ms 200ms;
             }
         }
-        a{
+        a {
             @include button(white, $light-gray, 1.8rem);
             animation: moveinup 1000ms 200ms;
         }
     }
 }
 
-#section-a{
+#section-a {
     background: $sec-dark;
     padding: 12.8rem 10%;
-    .sec-heading{
+    .sec-heading {
         @include primary-headig(3.5rem, 8rem);
     }
-    #grid-container{
+    #grid-container {
         @include grid(2);
-        #text-box{
-            h3{
+        #text-box {
+            h3 {
                 @include sec-heading(1.8rem, 2rem);
             }
-            p{
+            p {
                 font-size: 1.6rem;
                 color: $sec-text-color;
                 line-height: 1.6;
-                margin-bottom: 3rem
+                margin-bottom: 3rem;
             }
-            a{
+            a {
                 @include button($G-gradiant, $textColor, 1.6rem);
             }
         }
-        #img-box{
+        #img-box {
             position: relative;
-            &:hover{ // when the box is hovered scale down none hover chlid elements
-                img:not(:hover){
+            &:hover {
+                // when the box is hovered scale down none hover chlid elements
+                img:not(:hover) {
                     transform: scale(0.9);
                 }
             }
-            img{
+            img {
                 max-width: 55%;
                 max-height: 53rem;
                 position: absolute;
                 border-radius: 2px;
                 z-index: 3;
                 transition: all 300ms ease-out;
-                &:hover{
+                &:hover {
                     z-index: 10;
                     transform: scale(1.1);
                     @include box-shadow();
                 }
-                &:first-of-type{
+                &:first-of-type {
                     left: 0;
                     top: -14rem;
                 }
-                &:last-of-type{
+                &:last-of-type {
                     top: -4rem;
                     left: 22rem;
                 }
@@ -140,42 +139,42 @@ html {
     }
 }
 
-#section-b{
+#section-b {
     background: $accent-dark;
     padding: 12.8rem 10%;
     box-shadow: 0 0rem 2rem rgba($color: #000000, $alpha: 0.8);
     z-index: 10;
     text-align: center;
-    .sec-heading{
-        @include primary-headig(3.5rem, 8rem)
+    .sec-heading {
+        @include primary-headig(3.5rem, 8rem);
     }
-    #grid-container{
+    #grid-container {
         @include grid(3);
         column-gap: 5rem;
         row-gap: 5rem;
-        .tour-card{
+        .tour-card {
             background: #212121;
             @include box-shadow();
             font-size: 1.6rem;
             border-radius: 2px;
             text-transform: uppercase;
-            &__img{
-                img{                    
+            &__img {
+                img {
                     width: 100%;
                     height: 18rem;
-                    border-radius: 2px
+                    border-radius: 2px;
                 }
             }
-            &__title{
+            &__title {
                 @include primary-headig(inherit, 0rem);
                 line-height: 1.6;
                 letter-spacing: 1.2px;
-                margin:2.6rem;
-                &:hover{
+                margin: 2.6rem;
+                &:hover {
                     transform: none;
                 }
             }
-            &__features{
+            &__features {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -183,26 +182,26 @@ html {
                 row-gap: 1.6rem;
                 margin: 2.4rem 0px;
                 padding: 0px 10%;
-                    &__feature{
-                        &:first-of-type{
-                            font-size: 3.6rem;
-                            font-weight: 700;
-                        }
+                &__feature {
+                    &:first-of-type {
+                        font-size: 3.6rem;
+                        font-weight: 700;
                     }
+                }
             }
-            &__button{
+            &__button {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
-                a{
+                a {
                     @include button($G-gradiant, $textColor, 1.4rem);
                     &:link,
-                    &:active{
+                    &:active {
                         padding: 1.2rem 2.4rem;
                         margin: 0rem 0.8rem 3.2rem 0.8rem;
                     }
-                    &:last-of-type{
+                    &:last-of-type {
                         background: $textColor;
                         color: $light-gray;
                     }
@@ -210,16 +209,62 @@ html {
             }
         }
     }
-    a{
+    a {
         @include button($textColor, $light-gray, 1.6rem);
         margin-top: 8rem;
-        
     }
-    
-} 
-/*#section-c{ keep this for the next section
-    z-index: -1;
+}
+#section-c {
+    //z-index: -1;
     position: relative;
     background: $sec-dark;
-    height: 95vh;
-}*/
+    padding: 12.8rem;
+    .grid-container {
+        @include grid(2);
+        @include box-shadow();
+        grid-template-columns: 1.8fr 1.2fr;
+        //overflow: hidden;
+        background: $dark-gray;
+        height: 80vh;
+        font-size: 1.4rem;
+        .img-box {
+            background: /*$G-gradiant,*/ url("/Assets/form-img.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+        .form-box {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 4rem 0px;
+        
+            label{
+                font-weight: 600;
+                margin-top: 5rem !important;
+                &:first-of-type{
+                    margin-top: 0px;
+                }
+            }
+            input {
+                display: block;
+                font-size: 1.2rem;
+                font-family: inherit;
+                margin: 1rem 0px;
+                padding: 0.8rem 1.6rem;
+                width: 80%;
+                border: none;
+                border-radius: 20rem;
+                /*&:focus {
+                    outline-color: aqua;
+                    outline-width: 10px
+                }*/
+            }
+            a {
+                @include button($G-gradiant, $textColor, 1.6rem);
+                margin-top: 1.8rem;
+            }
+        }
+    }
+}

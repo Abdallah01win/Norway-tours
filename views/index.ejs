@@ -70,7 +70,6 @@
                                 <li class="tour-card__features__feature">
                                     <%= dataBase[tour]['features'][feature] %>
                                 </li>
-
                                 <% } %>
                         </ul>
                         <div class="tour-card__button">
@@ -79,12 +78,40 @@
                         </div>
                     </figure>
                     <% card+=1 %>
-                    <% if (card===3) {%>
-                        <% break %>
-                    <%} %>
-                    <% } %>
+                        <% if (card===3) {%>
+                            <% break %>
+                                <%} %>
+                                    <% } %>
         </div>
         <a href="/tours">Discover All Tours</a>
+    </section>
+    <section id="section-c">
+        <div class="grid-container">
+            <div class="img-box">
+                <h3>Sign-up now and enjoy your trip</h3>
+            </div>
+            <div class="form-box">
+                <form action="/tours" method="post">
+                    
+                    <label for="f-name">First Name</label>
+                    <input type="text" name="f-name" required placeholder="first name">
+
+                    <label for="l-name">Last Name</label>
+                    <input type="text" name="l-name" required>
+
+                    <label for="email">Email Adress</label>
+                    <input type="email" name="email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required>
+
+                    <label for="c-password">Confirm Password</label>
+                    <input type="password" name="c-password" required>
+
+                    <a href="/tours">Sign-up</a>
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 
