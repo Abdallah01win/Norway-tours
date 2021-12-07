@@ -89,7 +89,6 @@ html {
 #section-a{
     background: $sec-dark;
     padding: 12.8rem 10%;
-    
     .sec-heading{
         @include primary-headig(3.5rem, 8rem);
     }
@@ -146,34 +145,79 @@ html {
     padding: 12.8rem 10%;
     box-shadow: 0 0rem 2rem rgba($color: #000000, $alpha: 0.8);
     z-index: 10;
-    /*img{
-        width: 40%
-    }*/
+    text-align: center;
     .sec-heading{
         @include primary-headig(3.5rem, 8rem)
     }
     #grid-container{
         @include grid(3);
+        column-gap: 5rem;
+        row-gap: 5rem;
         .tour-card{
+            background: #212121;
+            @include box-shadow();
+            font-size: 1.6rem;
+            border-radius: 2px;
+            text-transform: uppercase;
             &__img{
                 img{                    
                     width: 100%;
-                    height: 20rem;
+                    height: 18rem;
+                    border-radius: 2px
                 }
             }
-            a{
-                display: inline-block;
-                @include button($G-gradiant, $textColor, 1rem);
-                &:last-of-type{
-                    background: $textColor;
-                    color: $light-gray;
+            &__title{
+                @include primary-headig(inherit, 0rem);
+                line-height: 1.6;
+                letter-spacing: 1.2px;
+                margin:2.6rem;
+                &:hover{
+                    transform: none;
+                }
+            }
+            &__features{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                row-gap: 1.6rem;
+                margin: 2.4rem 0px;
+                padding: 0px 10%;
+                    &__feature{
+                        &:first-of-type{
+                            font-size: 3.6rem;
+                            font-weight: 700;
+                        }
+                    }
+            }
+            &__button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                a{
+                    @include button($G-gradiant, $textColor, 1.4rem);
+                    &:link,
+                    &:active{
+                        padding: 1.2rem 2.4rem;
+                        margin: 0rem 0.8rem 3.2rem 0.8rem;
+                    }
+                    &:last-of-type{
+                        background: $textColor;
+                        color: $light-gray;
+                    }
                 }
             }
         }
     }
+    a{
+        @include button($textColor, $light-gray, 1.6rem);
+        margin-top: 8rem;
+        
+    }
     
-}
-/*#section-c{
+} 
+/*#section-c{ keep this for the next section
     z-index: -1;
     position: relative;
     background: $sec-dark;

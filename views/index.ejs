@@ -56,26 +56,35 @@
     <section id="section-b">
         <h3 class="sec-heading">Make the most out of Norway's heavens</h3>
         <div id="grid-container">
-        <% for (const tour in dataBase) { %>
-            <figure class="tour-card">
-                <div class="tour-card__img">
-                    <img src="<%=dataBase[tour]['imgURL']%>" alt="card image">
-                </div>
-                <div class="tour-card__title">
-                    <%=dataBase[tour]['name']%>
-                </div>
-                <ul class="tour-card__features">
-                <% for (const feature in dataBase[tour]['features']){%>
-                        <li class="tour-card__features__feature">
-                        <%= dataBase[tour]['features'][feature] %>
-                        </li>
-                        <% } %> 
-                </ul>
-                <a href="/payment" class="tour-card__button">Book Now</a>
-                <a href="/tours" class="tour-card__button">Details</a>
-            </figure>
-        <% } %>
-    </div> 
+            <%let card=0 %>
+                <% for (const tour in dataBase) { %>
+                    <figure class="tour-card">
+                        <div class="tour-card__img">
+                            <img src="<%=dataBase[tour]['imgURL']%>" alt="card image">
+                        </div>
+                        <div class="tour-card__title">
+                            <%=dataBase[tour]['name']%>
+                        </div>
+                        <ul class="tour-card__features">
+                            <% for (const feature in dataBase[tour]['features']){%>
+                                <li class="tour-card__features__feature">
+                                    <%= dataBase[tour]['features'][feature] %>
+                                </li>
+
+                                <% } %>
+                        </ul>
+                        <div class="tour-card__button">
+                            <a href="/payment">Book Now</a>
+                            <a href="/tour">Details</a>
+                        </div>
+                    </figure>
+                    <% card+=1 %>
+                    <% if (card===3) {%>
+                        <% break %>
+                    <%} %>
+                    <% } %>
+        </div>
+        <a href="/tours">Discover All Tours</a>
     </section>
 </body>
 

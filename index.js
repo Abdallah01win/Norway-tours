@@ -12,16 +12,18 @@ app.get('/', (req, res) => {
 app.get('/tours', (req, res) =>{
     res.render('tours', { dataBase })
 })
+app.get('/tour', (req, res) =>{
+    res.render('tour', { dataBase })
+})
 app.get('/payment', (req, res) =>{
     res.render('payment', { dataBase })
 })
 
+// Async function to get the user's Date
 function randomNum(max) {
     return Math.floor(Math.random() * max)
 }
-
 app.use(express.static('Public'));
-// Async function to get the user's Date
 const getDate = async () => {
     try {
         let currentDate = new Date();

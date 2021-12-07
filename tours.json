@@ -1,62 +1,62 @@
 {
-    "Fjiorn": {
+    "tour-1": {
         "imgURL" : "/Assets/Tours/northan-lights.jpg",
-        "name" : "tour 1",
+        "name" : "Light Chase",
         "features" : {
-            "distance": "100km",
-            "destination": "some place",
-            "people" : "6 people"
-        },
-        "price" : "$550"
+            "price" : "$650",
+            "duration": "3 days",
+            "destination": "Narvik City",
+            "people" : "12 people"
+        }
     },
-    "tour 2" :{
+    "tour-2" :{
         "imgURL" : "/Assets/Tours/mountain.jpg",
-        "name" : "tour 2",
+        "name" : "Mountain Exploring",
         "features" : {
-            "distance": "100km",
-            "destination": "some place",
-            "people" : "6 people"
-        },
-        "price" : "$550"
+            "price" : "$700",
+            "duration": "5 days",
+            "destination": "trolltunga trail",
+            "people" : "8 people"
+        }
     },
-    "tour 3" :{
-        "imgURL" : "/Assets/Tours/road-trip.jpg",
-        "name" : "tour 3",
+    "tour-3" :{
+        "imgURL" : "/Assets/Tours/countryside.jpg",
+        "name" : "Country-Side",
         "features" : {
-            "distance": "100km",
-            "destination": "some place",
+            "price" : "$870",
+            "duration": "7 days",
+            "destination": "Lofoten",
             "people" : "6 people"
-        },
-        "price" : "$550"
+        }
     },
-    "tour 4": {
+    "tour-4": {
         "imgURL" : "/Assets/Tours/waterfall.jpg",
         "name" : "tour 1",
         "features" : {
-            "distance": "100km",
+            "price" : "$550",
+            "duration": "4 days",
             "destination": "some place",
             "people" : "6 people"
-        },
-        "price" : "$550"
+        }
     },
-    "tour 5" :{
-        "imgURL" : "/Assets/Tours/countryside.jpg",
+    "tour-5" :{
+        "imgURL" : "/Assets/Tours/road-trip.jpg",
         "name" : "tour 2",
         "features" : {
-            "distance": "100km",
+            "price" : "$550",
+            "duration": "7 days",
             "destination": "some place",
             "people" : "6 people"
-        },
-        "price" : "$550"
+        }
     },
-    "tour 6" :{
+    "tour-6" :{
         "imgURL" : "/Assets/Tours/Fjord.jpg",
         "name" : "tour 3",
         "features" : {
-            "distance": "100km",
+            "price" : "$550",
+            "duration": "2 days",
             "destination": "some place",
             "people" : "6 people"
-        },
-        "price" : "$550"
+        }
     }
 }
