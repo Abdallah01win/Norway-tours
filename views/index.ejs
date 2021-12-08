@@ -31,9 +31,8 @@
             <a href="#">Discove our tours</a>
         </div>
     </header>
-    <!-- data accesing templet -->
-    <!-- <div>  Fjiorn.date %> </div>  -->
 
+    <!-- --- Section A --- -->
     <section id="section-a">
         <h2 class="sec-heading">Exciting Tours For Advanturous People</h2>
         <div id="grid-container">
@@ -53,6 +52,7 @@
         </div>
     </section>
 
+    <!-- --- Section B --- -->
     <section id="section-b">
         <h3 class="sec-heading">Make the most out of Norway's heavens</h3>
         <div id="grid-container">
@@ -85,34 +85,21 @@
         </div>
         <a href="/tours">Discover All Tours</a>
     </section>
+
+    <!-- --- Section C --- -->
     <section id="section-c">
         <div class="grid-container">
             <div class="img-box">
-                <h3>Sign-up now and enjoy your trip</h3>
+                <h3>Let's embark on a life-changing journy!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut tenetur nemo amet aliquam quis deserunt corporis accusamus repellendus eaque, exercitationem nulla. Provident placeat natus minus maiores dolor? Ducimus, doloremque.</p>
             </div>
             <div class="form-box">
-                <form action="/tours" method="post">
-                    
-                    <label for="f-name">First Name</label>
-                    <input type="text" name="f-name" required placeholder="first name">
-
-                    <label for="l-name">Last Name</label>
-                    <input type="text" name="l-name" required>
-
-                    <label for="email">Email Adress</label>
-                    <input type="email" name="email" required>
-
-                    <label for="password">Password</label>
-                    <input type="password" name="password" required>
-
-                    <label for="c-password">Confirm Password</label>
-                    <input type="password" name="c-password" required>
-
-                    <a href="/tours">Sign-up</a>
-                </form>
+                <%- include ('sign-up-form') -%>
+                <%- include ('log-in-form') -%>
             </div>
         </div>
     </section>
+    <script src="Scripts/app.js"></script>
 </body>
 
 </html>
