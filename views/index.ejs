@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +55,7 @@
     <!-- --- Section B --- -->
     <section id="section-b">
         <h3 class="sec-heading">Make the most out of Norway's heavens</h3>
-        <div id="grid-container">
+        <div class="grid-container">
             <%let card=0 %>
                 <% for (const tour in dataBase) { %>
                     <figure class="tour-card">
@@ -85,19 +86,73 @@
         <a href="/tours">Discover All Tours</a>
     </section>
 
+    
+    <section id="section-d">
+        <h3 class="sec-heading">Make the most out of Norway's heavens</h3>
+        <div class="grid-container">
+            <div class="review">
+                <div class="profile">
+                    <div class="user-img"></div>
+                    <div class="user-info">
+                        <a href="#" class="user-name">Toni Kross</a>
+                        <a href="#" class="user-tour">Light Chase</a>
+                    </div>
+                    <div class="user-rating">5</div>
+                </div>
+                <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas esse ut. Exercitationem, deleniti ea.</div>
+                <div class="review-date">08/12/2021</div>
+            </div>
+            <div class="review">
+                <div class="profile">
+                    <div class="user-img"></div>
+                    <div class="user-info">
+                        <a href="#" class="user-name">Toni Kross</a>
+                        <a href="#" class="user-tour">Light Chase</a>
+                    </div>
+                    <div class="user-rating">5</div>
+                </div>
+                <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas esse ut. Exercitationem, deleniti ea.</div>
+                <div class="review-date">08/12/2021</div>
+            </div>
+            <div class="review">
+                <div class="profile">
+                    <div class="user-img"></div>
+                    <div class="user-info">
+                        <a href="#" class="user-name">Toni Kross</a>
+                        <a href="#" class="user-tour">Light Chase</a>
+                    </div>
+                    <div class="user-rating">5</div>
+                </div>
+                <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas esse ut. Exercitationem, deleniti ea.</div>
+                <div class="review-date">08/12/2021</div>
+            </div>
+        </div>
+    </section>
+    
     <!-- --- Section C --- -->
     <section id="section-c">
         <div class="grid-container">
             <div class="img-box">
                 <h3>Let's embark on a life-changing journy!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut tenetur nemo amet aliquam quis deserunt corporis accusamus repellendus eaque, exercitationem nulla. Provident placeat natus minus maiores dolor? Ducimus, doloremque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut tenetur nemo amet aliquam quis
+                    deserunt corporis accusamus repellendus eaque, exercitationem nulla. Provident placeat natus minus
+                    maiores dolor? Ducimus, doloremque.</p>
             </div>
             <div class="form-box">
                 <%- include ('sign-up-form') -%>
-                <%- include ('log-in-form') -%>
+                    <%- include ('log-in-form') -%>
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
     <script src="Scripts/app.js"></script>
 </body>
 

@@ -10,6 +10,7 @@
     a {
         text-decoration: none;
         color: inherit;
+        cursor: pointer;
     }
 }
 
@@ -148,7 +149,7 @@ html {
     .sec-heading {
         @include primary-headig(3.5rem, 8rem);
     }
-    #grid-container {
+    .grid-container {
         @include grid(3);
         column-gap: 5rem;
         row-gap: 5rem;
@@ -217,7 +218,7 @@ html {
 #section-c {
     //z-index: -1;
     position: relative;
-    background: $sec-dark;
+    background: $accent-dark;
     padding: 12.8rem;
     .grid-container {
         @include grid(2);
@@ -271,9 +272,6 @@ html {
                 .form--forgot-info{
                     a{
                         font-size: 1.6rem;
-                        &:hover{
-                            cursor: wait;
-                        }
                     }
                 }
 
@@ -308,6 +306,47 @@ html {
             .animate-out{
                 animation: fadeoutup 800ms ease-out;
                 justify-content: flex-start;
+            }
+        }
+    }
+}
+#section-d{
+    padding: 12.8rem;
+    background: $sec-dark;
+    h3{
+        @include primary-headig(3.6rem, 8rem)
+    }
+    .grid-container{
+        @include grid(3);
+        .review{
+            background: $dark-gray;
+            padding: 3.2rem;
+            font-size: 1.4rem;
+            .profile{
+                display: flex;
+                align-items: center;
+                .user-img{
+
+                }
+                .user-info{
+                    .user-name{
+                        display: block;
+                        font-weight: 600;
+                        margin-bottom: 0.4rem;
+                    }
+                    .user-tour{
+                        color: $light-gray;
+                    }
+                }
+                .user-rating{
+                    margin-left: auto;
+                }
+            }
+            .review-text{
+                margin: 1.6rem 0px;
+            }
+            .review-date{
+                color: $light-gray;
             }
         }
     }
