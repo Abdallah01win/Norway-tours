@@ -1,54 +1,114 @@
-@keyframes moveinright{
-    0%{
+@keyframes moveinright {
+    0% {
         opacity: 0;
         transform: translate(-12rem);
     }
-    80%{
+    80% {
         transform: translate(1em);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@keyframes moveinleft{
-    0%{
+@keyframes moveinleft {
+    0% {
         opacity: 0;
         transform: translate(12rem);
     }
-    80%{
+    80% {
         transform: translate(-1em);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@keyframes moveinup{
-    0%{
+@keyframes moveinup {
+    0% {
         opacity: 0;
         transform: translateY(12rem);
     }
-    80%{
+    80% {
         transform: translateY(-1em);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
-@keyframes moveindown{
-    0%{
+@keyframes moveindown {
+    0% {
         opacity: 0;
         transform: translateY(-12rem);
     }
-    80%{
+    80% {
         transform: translateY(1em);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fadeoutup {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(-30rem);
+    }
+    99% {
+        opacity: 0;
+        transform: translateY(-55rem);
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        /*transform: translateY(0);
+        pointer-events: none;
+        /*position: absolute;
+        top: 0;
+        right: 0;*/
+    }
+}
+
+@keyframes fadeinup{
+    0%{
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+    30%{
+        opacity: 0.5;
+        transform: translateY(30rem);
+    }
+    60%{
+        opacity: 0.8;
+        transform: translateY(10rem);
     }
     100%{
         opacity: 1;
-        transform: translate(0);
+        transform: translateY(0rem);
+    }
+}
+@keyframes fadeoutup{
+    0%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+    30%{
+        opacity: 0.8;
+        transform: translateY(-35rem);
+    }
+    60%{
+        opacity: 0.4;
+        transform: translateY(-50rem);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-75rem);
     }
 }
