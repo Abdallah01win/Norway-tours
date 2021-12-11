@@ -1,0 +1,41 @@
+footer {
+    padding: 12.8rem 10%;
+    background: $sec-dark;
+    font-size: 1.6rem;
+    .grid-container {
+        @include grid(4);
+        align-items: start;
+        div {
+            ul {
+                li {
+                    margin-bottom: 1.6rem;
+                    &:not(.list-title) {
+                        &:hover {
+                            cursor: pointer;
+                            @include gradiant();
+                        }
+                    }
+                }
+                li.class {
+                    &:hover {
+                        background-image: none;
+                        color: $textColor;
+                    }
+                }
+                .list-title {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin-bottom: 2.4rem;
+                }
+                .social-links {
+                    @include gradiant();
+                    font-size: 3rem;
+                    i {
+                        cursor: pointer;
+                        margin-right: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

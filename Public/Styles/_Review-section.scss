@@ -1,0 +1,38 @@
+.grid-container {
+    @include grid(3);
+    .review {
+        background: $dark-gray;
+        padding: 3.2rem;
+        font-size: 1.4rem;
+        @include box-shadow();
+        .profile {
+            display: flex;
+            align-items: flex-start;
+            /*.user-img {
+            }*/
+            .user-info {
+                .user-name {
+                    display: block;
+                    font-weight: 600;
+                    margin-bottom: 0.4rem;
+                }
+                .user-tour {
+                    color: $light-gray;
+                    &:hover {
+                        @include gradiant();
+                    }
+                }
+            }
+            .user-rating {
+                margin-left: auto;
+                @include gradiant();
+            }
+        }
+        .review-text {
+            margin: 1.6rem 0px;
+        }
+        .review-date {
+            color: $light-gray;
+        }
+    }
+}

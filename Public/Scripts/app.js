@@ -3,7 +3,6 @@ const signUpBTN = document.querySelector('#sec-sign-up-btn');
 const signUpForm = document.getElementById('sign-up-form');
 const logInForm = document.getElementById('log-in-form');
 
-
 logInBTN.addEventListener('click', (e)=>{
     e.preventDefault();
     signUpForm.classList.remove('animate-up');

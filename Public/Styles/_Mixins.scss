@@ -76,3 +76,11 @@
         outline: none;
     }
 }
+
+@mixin pri-and-sec-buttons() {
+    @include button($G-gradiant, $textColor, inherit);
+    &:last-of-type{
+        background: $textColor;
+        color: $light-gray;
+    }
+}
