@@ -1,33 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Styles/Main.min.css">
-    <title>Norway Tours</title>
+    <%- include('head') %> 
 </head>
 
 <body>
     <!-- --- Header Section --- -->
-    <header id="header">
-        <nav id="nav">
-            <div id="logo">
-                Norway-Tours
-            </div>
-            <ul id="nav-list">
-                <li class="nav-list-item">Tours</li>
-                <li class="nav-list-item">Services</li>
-                <li class="nav-list-item">Contact</li>
-            </ul>
-            <div class="buttons">
-                <a href="#section-c" class="btn">Sign Up</a>
-                <a href="#section-c" class="sec-log-in-btn">log in</a>
-            </div>
-        </nav>
+    <header class="header">
+        <%- include('navigation') %> 
         <div id="text-box">
             <h1 class="heading-primary">
                 <span class="HP-main">outdoors</span>
@@ -62,24 +42,26 @@
         <h3 class="sec-heading">Make the most out of Norway's heavens</h3>
         <div class="grid-container">
             <%let card=0 %>
-                <% for (const tour in dataBase) { %>
+                <% for (let i = 0; i < dataBase.length; i++){ %>
                     <figure class="tour-card">
                         <div class="tour-card__img">
-                            <img src="<%=dataBase[tour]['imgURL']%>" alt="card image">
+                            <img src="<%=dataBase[i].imgURL%>" alt="card image">
                         </div>
                         <div class="tour-card__title">
-                            <%=dataBase[tour]['name']%>
+                            <%=dataBase[i].name%>
                         </div>
                         <ul class="tour-card__features">
-                            <% for (const feature in dataBase[tour]['features']){%>
+                            <% for (const feature in dataBase[i]['features']){%>
                                 <li class="tour-card__features__feature">
-                                    <%= dataBase[tour]['features'][feature] %>
+                                    <%= dataBase[i]['features'][feature] %>
                                 </li>
                                 <% } %>
                         </ul>
                         <div class="tour-card__button">
-                            <a href="/payment">Book Now</a>
-                            <a href="/tour">Details</a>
+                            <a id="payment-btn" href="/payment">Book Now</a>
+                            <!-- <form action="/tour" method="post"> -->
+                                <a class="details-btn" href="" >Details</a>
+                            <!-- </form> -->
                         </div>
                     </figure>
                     <% card+=1 %>
@@ -120,7 +102,7 @@
 
 
 
-    <script src="Scripts/app.js"></script>
+    <script type="module" src="Scripts/app.js"></script>
 </body>
 
 </html>

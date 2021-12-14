@@ -1,5 +1,5 @@
-{
-    "tour-1": {
+[
+    {
         "imgURL" : "/Assets/Tours/northan-lights.jpg",
         "name" : "Light Chase",
         "features" : {
@@ -9,7 +9,7 @@
             "people" : "12 people"
         }
     },
-    "tour-2" :{
+    {
         "imgURL" : "/Assets/Tours/mountain.jpg",
         "name" : "Mountain Exploring",
         "features" : {
@@ -19,7 +19,7 @@
             "people" : "8 people"
         }
     },
-    "tour-3" :{
+    {
         "imgURL" : "/Assets/Tours/countryside.jpg",
         "name" : "Country-Side",
         "features" : {
@@ -29,7 +29,7 @@
             "people" : "6 people"
         }
     },
-    "tour-4": {
+    {
         "imgURL" : "/Assets/Tours/waterfall.jpg",
         "name" : "tour 1",
         "features" : {
@@ -39,7 +39,7 @@
             "people" : "6 people"
         }
     },
-    "tour-5" :{
+    {
         "imgURL" : "/Assets/Tours/road-trip.jpg",
         "name" : "tour 2",
         "features" : {
@@ -49,7 +49,7 @@
             "people" : "6 people"
         }
     },
-    "tour-6" :{
+    {
         "imgURL" : "/Assets/Tours/Fjord.jpg",
         "name" : "tour 3",
         "features" : {
@@ -59,4 +59,4 @@
             "people" : "6 people"
         }
     }
-}
+]

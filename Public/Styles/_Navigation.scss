@@ -1,0 +1,37 @@
+#nav {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    font-size: 1.8rem;
+    padding: 4rem 8rem;
+    #logo {
+        margin-right: 2rem;
+    }
+    #nav-list {
+        display: flex;
+        margin-right: auto;
+        .nav-list-item {
+            padding: 0px 2rem;
+            cursor: pointer;
+            &:last-of-type {
+                padding: 0px 0px 0px 1rem;
+            }
+            &:hover{
+                transform: scale(1.1)
+            }
+        }
+    }
+    .buttons {
+        a {
+            @include pri-and-sec-buttons();
+            &:link,
+            &:visited {
+                padding: 1rem 3rem;
+                font-size: 1.6rem;
+            }
+            &:first-of-type {
+                margin-right: 2rem;
+            }
+        }
+    }
+}

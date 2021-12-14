@@ -30,46 +30,13 @@ html {
 }
 
 // --- Header Section --- //
-#header {
+.header {
     height: 92vh;
     background-image: url(../Assets/Hero-img.jpg);
     background-size: cover;
     background-position: center;
     @include box-shadow();
-
-    #nav {
-        display: flex;
-        align-items: center;
-        height: 5rem;
-        font-size: 1.8rem;
-        padding: 4rem 8rem;
-        #logo {
-            margin-right: 2rem;
-        }
-        #nav-list {
-            display: flex;
-            margin-right: auto;
-            .nav-list-item {
-                padding: 0px 2rem;
-                &:last-of-type {
-                    padding: 0px 0px 0px 1rem;
-                }
-            }
-        }
-        .buttons {
-            a {
-                @include pri-and-sec-buttons();
-                &:link,
-                &:visited {
-                    padding: 1rem 3rem;
-                    font-size: 1.6rem;
-                }
-                &:first-of-type {
-                    margin-right: 2rem;
-                }
-            }
-        }
-    }
+    @import "Navigation";
 
     #text-box {
         position: absolute;
@@ -213,11 +180,10 @@ html {
                 a {
                     @include pri-and-sec-buttons();
                     &:link,
-                    &:active {
-                        font-size: 1.4rem;
-                        padding: 1.2rem 2.4rem;
-                        margin: 0rem 0.8rem 3.2rem 0.8rem;
-                    }
+                    &:visited{
+                            padding: 1.2rem 2.4rem;
+                            margin: 0rem 0.8rem 3.2rem 0.8rem;
+                        }
                 }
             }
         }
@@ -287,7 +253,7 @@ html {
             .form--buttons {
                 display: flex;
                 justify-content: space-evenly;
-                a {
+                button {
                     margin-top: 1.8rem;
                     @include pri-and-sec-buttons();
                 }

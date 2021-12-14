@@ -3,7 +3,6 @@ const app = express();
 const dataBase = require('./tours.json');
 const path = require('path');
 
-
 //setup EJS 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -15,11 +14,17 @@ app.get('/', (req, res) => {
 app.get('/tours', (req, res) =>{
     res.render('tours', { dataBase })
 })
-app.get('/tour', (req, res) =>{
-    res.render('tour', { dataBase })
-})
 app.get('/payment', (req, res) =>{
     res.render('payment', { dataBase })
+})
+app.get('/light-chase', (req, res) =>{
+    res.render('light-chase', { dataBase})
+})
+app.get('/mountain-explorer', (req, res) =>{
+    res.render('mountain-explorer', { dataBase})
+})
+app.get('/country-side', (req, res) =>{
+    res.render('country-side', { dataBase})
 })
 
 function randomNum(max) {

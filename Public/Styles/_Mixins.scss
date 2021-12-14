@@ -8,9 +8,8 @@
 }
 
 @mixin button($btn-bg-color, $btn-text-color, $font-size) {
-    &:link,
-    &:visited {
         display: inline-block;
+        border: none;
         font-size: $font-size;
         font-weight: 600;
         text-transform: uppercase;
@@ -18,7 +17,6 @@
         border-radius: 20rem;
         background: $btn-bg-color;
         color: $btn-text-color;
-    }
     &:hover {
         transform: translateY(-0.3rem);
         @include box-shadow();
