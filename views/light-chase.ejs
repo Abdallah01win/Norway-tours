@@ -6,15 +6,30 @@
 </head>
 
 <body>
-    <header class="header" style="background-image: url(<%=dataBase[0].imgURL%>)">
+    <header class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(<%=dataBase[0].imgURL%>)">
         <%- include('navigation') %>
             <div class="text-box">
-                <h1 class="heading-primary">
-                    <span class="HP-main">
-                        <%=dataBase[0].name %>
-                    </span>
-                    <span class="HP-secondary">is where life happens</span>
-                </h1>
+                <h1><%=dataBase[0].name %></h1>
+            </div>
+            <div class="stats">
+                <div>
+                    <i class="lni lni-users"></i>
+                    <p class="number">1500</p>
+                    <p class="lable">visitors</p>
+                </div>
+
+                <div>
+                    <i class="lni lni-map"></i>
+                    <p class="number">28000</p>
+                    <p class="lable">Miles</p>
+                </div>
+
+                <div>
+                    <i class="lni lni-star"></i>
+                    <p class="number">5/5</p>
+                    <p class="lable">Reviews</p>
+
+                </div>
             </div>
     </header>
 

@@ -5,13 +5,32 @@
 </head>
 
 <body>
-    <header class="header" style="background-image: url(<%=dataBase[2].imgURL%>)">
+    <header class="header overlay" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(<%=dataBase[2].imgURL%>)">
         <%- include('navigation') %>
-        <div class="header-text">
+        <div class="text-box">
             <h1 >
                 <%=dataBase[2].name %>
-
             </h1>
+        </div>
+        <div class="stats">
+            <div>
+                <i class="lni lni-users"></i>
+                <p class="number">1500</p>
+                <p class="lable">visitors</p>
+            </div>
+
+            <div>
+                <i class="lni lni-map"></i>
+                <p class="number">28000</p>
+                <p class="lable">Miles</p>
+            </div>
+
+            <div>
+                <i class="lni lni-star"></i>
+                <p class="number">4.8/5</p>
+                <p class="lable">Reviews</p>
+
+            </div>
         </div>
     </header>
     <section class="section-d">
