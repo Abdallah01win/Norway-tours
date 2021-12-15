@@ -1,62 +1,23 @@
 <div class="grid-container">
+    <% for( let x = 0; x < 3; x++ ) { %>
     <div class="review">
         <div class="profile">
             <div class="user-img"></div>
             <div class="user-info">
-                <a href="#" class="user-name">Toni Kross</a>
-                <a href="#" class="user-tour">Light Chase</a>
+                <a href="#" class="user-name"><%= dataBase[x].reviews[0].author %> </a>
+                <a href="#" class="user-tour"><%=dataBase[x].name%></a>
             </div>
             <div class="user-rating">
                 <span>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
+                    <!-- <i class="lni lni-star"></i> -->
+                    <% for( let i = 0; i < dataBase[x].reviews[0].stars; i++ ) { %>
+                        <i class="lni lni-star-filled"></i>
+                    <% } %>
                 </span>
             </div>
         </div>
-        <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas esse ut. Exercitationem, deleniti ea.</div>
-        <div class="review-date">08/12/2021</div>
+        <div class="review-text"><%=dataBase[x].reviews[0].text%></div>
+        <div class="review-date"><%=dataBase[x].reviews[0].date%></div>
     </div>
-    <div class="review">
-        <div class="profile">
-            <div class="user-img"></div>
-            <div class="user-info">
-                <a href="#" class="user-name">Toni Kross</a>
-                <a href="#" class="user-tour">Light Chase</a>
-            </div>
-            <div class="user-rating">
-                <span>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                </span>
-            </div>
-        </div>
-        <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas esse ut. Exercitationem, deleniti ea.</div>
-        <div class="review-date">08/12/2021</div>
-    </div>
-    <div class="review">
-        <div class="profile">
-            <div class="user-img"></div>
-            <div class="user-info">
-                <a href="#" class="user-name">Toni Kross</a>
-                <a href="#" class="user-tour">Light Chase</a>
-            </div>
-            <div class="user-rating">
-                <span>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star-filled"></i>
-                    <i class="lni lni-star"></i>
-                </span>
-            </div>
-        </div>
-        <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas esse ut. Exercitationem, deleniti ea.</div>
-        <div class="review-date">08/12/2021</div>
-    </div>
+    <% } %>
 </div>

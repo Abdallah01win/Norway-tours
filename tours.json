@@ -7,7 +7,27 @@
             "duration": "3 days",
             "destination": "Narvik City",
             "people" : "12 people"
-        }
+        },
+        "reviews" : [
+            {
+                "author" : "Pier Gasly",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "17/10/2021",
+                "stars" : "5"
+            },
+            {
+                "author" : "Lucka Modric",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "15/12/2021",
+                "stars" : "4"
+            },
+            {
+                "author" : "Pier Gasly",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "20/11/2021",
+                "stars" : "5"
+            }
+        ]
     },
     {
         "imgURL" : "/Assets/Tours/mountain.jpg",
@@ -17,7 +37,27 @@
             "duration": "5 days",
             "destination": "trolltunga trail",
             "people" : "8 people"
-        }
+        },
+        "reviews" : [
+            {
+                "author" : "Pier Gasly",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "17/10/2021",
+                "stars" : "5"
+            },
+            {
+                "author" : "Lucka Modric",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "15/12/2021",
+                "stars" : "4"
+            },
+            {
+                "author" : "Pier Gasly",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "20/11/2021",
+                "stars" : "5"
+            }
+        ]
     },
     {
         "imgURL" : "/Assets/Tours/countryside.jpg",
@@ -27,7 +67,27 @@
             "duration": "7 days",
             "destination": "Lofoten",
             "people" : "6 people"
-        }
+        },
+        "reviews" : [
+            {
+                "author" : "Pier Gasly",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "17/10/2021",
+                "stars" : "5"
+            },
+            {
+                "author" : "Lucka Modric",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "15/12/2021",
+                "stars" : "4"
+            },
+            {
+                "author" : "Pier Gasly",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "date": "20/11/2021",
+                "stars" : "5"
+            }
+        ]
     },
     {
         "imgURL" : "/Assets/Tours/waterfall.jpg",

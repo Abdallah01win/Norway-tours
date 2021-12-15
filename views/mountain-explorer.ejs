@@ -5,11 +5,41 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" style="background-image: url(<%=dataBase[1].imgURL%>)">
         <%- include('navigation') %>
-        <h3>Mountain explorer</h3>
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="HP-main"><%=dataBase[1].name %> </span>
+                <span class="HP-secondary">is where life happens</span>
+            </h1>
+        </div>
         
     </header>
+    <section class="section-d">
+        <div class="grid-container">
+            <% for( let x = 0; x < 3; x++ ) { %>
+                <div class="review">
+                    <div class="profile">
+                        <div class="user-img"></div>
+                        <div class="user-info">
+                            <a href="#" class="user-name"><%= dataBase[1].reviews[x].author %> </a>
+                            <a href="#" class="user-tour"><%=dataBase[1].name%></a>
+                        </div>
+                        <div class="user-rating">
+                            <span>
+                                <!-- <i class="lni lni-star"></i> -->
+                                <% for( let i = 0; i < dataBase[1].reviews[x].stars; i++ ) { %>
+                                    <i class="lni lni-star-filled"></i>
+                                <% } %>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="review-text"><%=dataBase[1].reviews[x].text%></div>
+                    <div class="review-date"><%=dataBase[1].reviews[x].date%></div>
+                </div>
+                <% } %>
+        </div>
+    </section>
 
     <%- include('footer') %>
 
