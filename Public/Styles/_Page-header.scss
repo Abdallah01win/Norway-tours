@@ -21,9 +21,9 @@
         color: $textColor;
         text-align: center;
         font-size: 3rem;
-        padding: 1.2rem;
+        padding: 1.2rem 3.2rem;
         border-radius: 2px;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.75));
         i {
             @include gradiant();
             font-size: 6rem;
