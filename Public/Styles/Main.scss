@@ -23,6 +23,18 @@ html {
         color: $textColor;
         padding: 3rem;
         background: $main-dark;
+        &::-webkit-scrollbar{
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track{
+            border-radius: 5px;
+            background: #212121;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #7ed56f, #28b485) ;
+        }
         section {
             padding: 12.8rem 10%;
         }
@@ -289,6 +301,14 @@ html {
 }
 .section-f{
     background: $accent-dark;
+    h3{
+        @include gradiant;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        letter-spacing: 1.1;
+        margin-bottom: 6.4rem;
+        text-align: center;
+    }
     .grid-container{
         @include grid(3);
         .img-container{
@@ -310,13 +330,7 @@ html {
     .cta-box{
         text-align: center;
         margin-top: 9.6rem;
-        h3{
-            @include gradiant;
-            text-transform: uppercase;
-            font-size: 2.4rem;
-            letter-spacing: 1.1;
-            margin-bottom: 6.4rem;
-        }
+        
         .btns{
             a{
                 @include pri-and-sec-buttons();
