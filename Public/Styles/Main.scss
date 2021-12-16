@@ -65,7 +65,7 @@ html {
             margin-bottom: 6rem;
             .HP-main {
                 display: block;
-                @include heading(6rem, 400, 3.5rem);
+                @include heading(6rem, 400, 1.5rem);
                 margin-bottom: 2rem;
                 animation: moveinright 1000ms 200ms;
             }
@@ -137,9 +137,39 @@ html {
     }
 }
 
+.section-z{ // section a in tour pages 
+    background: $accent-dark;
+    .stats {
+        @include grid(4);
+        column-gap: 4rem;
+        div {
+            color: $textColor;
+            background: $dark-gray;
+            @include box-shadow;
+            text-align: center;
+            font-size: 2rem;
+            padding: 1.2rem 3.2rem;
+            border-radius: 2px;
+            i {
+                @include gradiant();
+                font-size: 6rem;
+                margin: 1.8rem;
+            }
+            p {
+                margin: 1.2rem;
+                a{
+                    &:hover{
+                        @include gradiant();
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
 #section-b {
     background: $accent-dark;
-    //box-shadow: 0 0rem 2rem rgba($color: #000000, $alpha: 0.8);
     z-index: 10;
     text-align: center;
     .sec-heading {
@@ -313,8 +343,6 @@ html {
         @include grid(3);
         .img-container{
             @include box-shadow();
-            width: 31.5rem;
-            height: 22rem;
             overflow: hidden;
             img{
                 width: 100%;

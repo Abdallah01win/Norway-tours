@@ -7,35 +7,48 @@
 
 <body>
     <header class="header"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(<%=dataBase[1].imgURL%>)">
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<%=dataBase[1].imgURL%>)">
         <%- include('navigation') %>
             <div class="text-box">
                 <h1>
                     <%=dataBase[1].name %>
                 </h1>
+                <div>
+                    <p>In a 5-day long mountain hike, You get to explore one of Norway's most spectaculare hiking trails, the <span>Trolltunga Trail</span>.<br>Through this 300km long trail you will experiance the wilderness of th hiker's life through camping, mountain-climing, hunting, fishing and much more.</p>
+                </div>
             </div>
-            <div class="stats">
+            
+            
+    </header>
+    <section class="section-z">
+        <div class="stats">
                 <div>
                     <i class="lni lni-users"></i>
-                    <p class="number">1500</p>
-                    <p class="lable">visitors</p>
+                    <p class="lable">Yearly visitors</p>
+                    <p class="number">1800+</p>
+                </div>
+                <div>
+                    <i class="lni lni-calendar"></i>
+                    <p class="lable">Up-coming</p>
+                    <p class="number"><%= dataBase[1].date %> </p>
                 </div>
 
                 <div>
                     <i class="lni lni-map"></i>
-                    <p class="number">28000</p>
-                    <p class="lable">Miles</p>
+                    <p class="lable">Starting Point</p>
+                    <p class="number"><a href="">Skjeggedal</a></p>
                 </div>
 
                 <div>
                     <i class="lni lni-star"></i>
-                    <p class="number">4.8/5</p>
                     <p class="lable">Reviews</p>
+                    <p class="number">4.8/5</p>
 
                 </div>
             </div>
-    </header>
+    </section>
     <section class="section-d">
+        <h3 class="sec-heading">What our customers say about us</h3>
         <div class="grid-container">
             <% for( let x=0; x < 3; x++ ) { %>
                 <div class="review">

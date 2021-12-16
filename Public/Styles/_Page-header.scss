@@ -1,6 +1,7 @@
 .text-box {
     position: absolute;
-    top: 37.5%;
+    //top: 37.5%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -9,28 +10,15 @@
         text-transform: uppercase;
         letter-spacing: 0.13rem;
     }
-}
-.stats {
-    @include grid(3);
-    column-gap: 6rem;
-    position: absolute;
-    bottom: -5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    div {
-        color: $textColor;
-        text-align: center;
-        font-size: 3rem;
-        padding: 1.2rem 3.2rem;
-        border-radius: 2px;
-        background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.75));
-        i {
-            @include gradiant();
-            font-size: 6rem;
-            margin: 1.8rem;
-        }
-        p {
-            margin: 1.2rem;
+    div{
+        p{
+            font-size: 2.2rem;
+            margin-top: 8rem;
+            line-height: 1.5;
+            span{
+                @include gradiant();
+            }
         }
     }
 }
+
