@@ -23,17 +23,17 @@ html {
         color: $textColor;
         padding: 3rem;
         background: $main-dark;
-        &::-webkit-scrollbar{
+        &::-webkit-scrollbar {
             width: 10px;
         }
-        &::-webkit-scrollbar-track{
+        &::-webkit-scrollbar-track {
             border-radius: 5px;
             background: #212121;
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
         }
-        &::-webkit-scrollbar-thumb{
+        &::-webkit-scrollbar-thumb {
             border-radius: 5px;
-            background: linear-gradient(to bottom, #7ed56f, #28b485) ;
+            background: linear-gradient(to bottom, #7ed56f, #28b485);
         }
         section {
             padding: 12.8rem 10%;
@@ -80,7 +80,7 @@ html {
             animation: moveinup 1000ms 200ms;
         }
     }
-    @import 'Page-header';
+    @import "Page-header";
 }
 
 #section-a {
@@ -137,17 +137,18 @@ html {
     }
 }
 
-.section-z{ // section a in tour pages 
+.section-z {
+    // section a in tour pages
     background: $accent-dark;
     .stats {
         @include grid(4);
-        column-gap: 4rem;
+        column-gap: 3.2rem;
         div {
+            height: 100%;
             color: $textColor;
             background: $dark-gray;
             @include box-shadow;
             text-align: center;
-            font-size: 2rem;
             padding: 1.2rem 3.2rem;
             border-radius: 2px;
             i {
@@ -156,13 +157,16 @@ html {
                 margin: 1.8rem;
             }
             p {
-                margin: 1.2rem;
-                a{
-                    &:hover{
-                        @include gradiant();
-                        
-                    }
+                font-size: 1.6rem;
+                line-height: 1.4;
+                margin-bottom: 1.8rem;
+                span {
+                    @include gradiant();
                 }
+            }
+            .lable {
+                font-size: 2rem;
+                font-weight: 600;
             }
         }
     }
@@ -224,10 +228,10 @@ html {
                 a {
                     @include pri-and-sec-buttons();
                     &:link,
-                    &:visited{
-                            padding: 1.2rem 2.4rem;
-                            margin: 1rem 0.8rem 3.2rem 0.8rem;
-                        }
+                    &:visited {
+                        padding: 1.2rem 2.4rem;
+                        margin: 1rem 0.8rem 3.2rem 0.8rem;
+                    }
                 }
             }
         }
@@ -329,9 +333,9 @@ html {
     }
     @import "Review-section";
 }
-.section-f{
+.section-f {
     background: $accent-dark;
-    h3{
+    h3 {
         @include gradiant;
         text-transform: uppercase;
         font-size: 2.4rem;
@@ -339,32 +343,32 @@ html {
         margin-bottom: 6.4rem;
         text-align: center;
     }
-    .grid-container{
+    .grid-container {
         @include grid(3);
-        .img-container{
+        .img-container {
             @include box-shadow();
             overflow: hidden;
-            img{
+            img {
                 width: 100%;
                 height: 100%;
                 transition: all 300ms ease-out;
-                &:hover{
+                &:hover {
                     transform: scale(1.15);
                     cursor: pointer;
                 }
             }
         }
     }
-    .cta-box{
+    .cta-box {
         text-align: center;
         margin-top: 9.6rem;
-        
-        .btns{
-            a{
+
+        .btns {
+            a {
                 @include pri-and-sec-buttons();
                 font-size: 1.6rem;
-                &:first-of-type{
-                    margin-right: 2.4rem
+                &:first-of-type {
+                    margin-right: 2.4rem;
                 }
             }
         }
