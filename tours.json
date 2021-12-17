@@ -27,6 +27,32 @@
                 "date": "20/11/2021",
                 "stars" : "5"
             }
+        ],
+        "gallary": [
+            {
+                "imgURL": "/Assets/Tours/Light-chase-Gallary/1.jpg",
+                "alt": "green aurora lights"
+            },
+            {
+                "imgURL": "/Assets/Tours/Light-chase-Gallary/2.jpg",
+                "alt": "Aurora lights on snow mountain"
+            },
+            {
+                "imgURL": "/Assets/Tours/Light-chase-Gallary/3.jpg",
+                "alt": "aurora lights and lake"
+            },
+            {
+                "imgURL": "/Assets/Tours/Light-chase-Gallary/4.jpg",
+                "alt": "Purple aurora lights"
+            },
+            {
+                "imgURL": "/Assets/Tours/Light-chase-Gallary/5.jpg",
+                "alt": "green aurora"
+            },
+            {
+                "imgURL": "/Assets/Tours/Light-chase-Gallary/6.jpg",
+                "alt": "light green an purple aurora light"
+            }
         ]
     },
     {
@@ -56,6 +82,32 @@
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "20/11/2021",
                 "stars" : "5"
+            }
+        ],
+        "gallary": [
+            {
+                "imgURL": "/Assets/Tours/Mountain-Gallary/1.jpg",
+                "alt": "Woman on mountain clif and lake"
+            },
+            {
+                "imgURL": "/Assets/Tours/Mountain-Gallary/2.jpg",
+                "alt": "man on mountain clif"
+            },
+            {
+                "imgURL": "/Assets/Tours/Mountain-Gallary/3.jpg",
+                "alt": "mountains and clouds at sun rise "
+            },
+            {
+                "imgURL": "/Assets/Tours/Mountain-Gallary/4.jpg",
+                "alt": "mountains"
+            },
+            {
+                "imgURL": "/Assets/Tours/Mountain-Gallary/5.jpg",
+                "alt": "mountain vally at sun rise"
+            },
+            {
+                "imgURL": "/Assets/Tours/Mountain-Gallary/6.jpg",
+                "alt": "camping in the mountains"
             }
         ]
     },
@@ -87,36 +139,32 @@
                 "date": "20/11/2021",
                 "stars" : "5"
             }
+        ],
+        "gallary": [
+            {
+                "imgURL": "/Assets/Tours/Country-Side-Gallary/1.jpg",
+                "alt": "grass field near a mountain"
+            },
+            {
+                "imgURL": "/Assets/Tours/Country-Side-Gallary/2.jpg",
+                "alt": "small village on lake shour"
+            },
+            {
+                "imgURL": "/Assets/Tours/Country-Side-Gallary/3.jpg",
+                "alt": "grass field at a cloudy sun rise"
+            },
+            {
+                "imgURL": "/Assets/Tours/Country-Side-Gallary/4.jpg",
+                "alt": "man in large forest"
+            },
+            {
+                "imgURL": "/Assets/Tours/Country-Side-Gallary/5.jpg",
+                "alt": "house in a fieald near a mountain"
+            },
+            {
+                "imgURL": "/Assets/Tours/Country-Side-Gallary/6.jpg",
+                "alt": "village on a lake shour"
+            }
         ]
-    },
-    {
-        "imgURL" : "/Assets/Tours/waterfall.jpg",
-        "name" : "tour 1",
-        "features" : {
-            "price" : "$550",
-            "duration": "4 days",
-            "destination": "some place",
-            "people" : "6 people"
-        }
-    },
-    {
-        "imgURL" : "/Assets/Tours/road-trip.jpg",
-        "name" : "tour 2",
-        "features" : {
-            "price" : "$550",
-            "duration": "7 days",
-            "destination": "some place",
-            "people" : "6 people"
-        }
-    },
-    {
-        "imgURL" : "/Assets/Tours/Fjord.jpg",
-        "name" : "tour 3",
-        "features" : {
-            "price" : "$550",
-            "duration": "2 days",
-            "destination": "some place",
-            "people" : "6 people"
-        }
     }
 ]

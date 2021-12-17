@@ -70,30 +70,15 @@
     </section>
 
     <section class="section-f">
-        <h3>Book a Tour and make your own magical memories</h3> 
-        <!-- make the gallary with ejs -->
+        <h3>
+            Book a Tour and make your own magical memories
+        </h3> 
         <div class="grid-container">
-            <div class="img-container">
-                <img src="/Assets/Tours/Country-Side-Gallary/1.jpg" alt="">
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Country-Side-Gallary/2.jpg" alt="">
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Country-Side-Gallary/3.jpg" alt="">
-
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Country-Side-Gallary/4.jpg" alt="">
-
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Country-Side-Gallary/5.jpg" alt="">
-
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Country-Side-Gallary/6.jpg"alt="">
-            </div>
+            <% for( let i = 0; i < dataBase[2].gallary.length; i++ ) { %>
+                <div class="img-container">
+                    <img src="<%=dataBase[2].gallary[i].imgURL%>" alt="<%=dataBase[2].gallary[i].alt%>">
+                </div>
+            <% } %>
         </div>
         <div class="cta-box">
             <div class="btns">
@@ -104,9 +89,6 @@
     </section>
 
     <%- include('footer') %>
-
-
-
 
 </body>
 

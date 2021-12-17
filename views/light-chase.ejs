@@ -75,27 +75,11 @@
     <section class="section-f">
         <h3>Book a Tour and make your own magical memories</h3>
         <div class="grid-container">
-            <div class="img-container">
-                <img src="/Assets/Tours/Light-chase-Gallary/1.jpg" alt="">
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Light-chase-Gallary/2.jpg" alt="">
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Light-chase-Gallary/3.jpg" alt="">
-
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Light-chase-Gallary/4.jpg" alt="">
-
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Light-chase-Gallary/5.jpg" alt="">
-
-            </div>
-            <div class="img-container">
-                <img src="/Assets/Tours/Light-chase-Gallary/6.jpg"alt="">
-            </div>
+            <% for( let i = 0; i < dataBase[0].gallary.length; i++ ) { %>
+                <div class="img-container">
+                    <img src="<%=dataBase[0].gallary[i].imgURL%>" alt="<%=dataBase[0].gallary[i].alt%>">
+                </div>
+            <% } %>
         </div>
         <div class="cta-box">
             <div class="btns">
