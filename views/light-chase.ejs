@@ -9,9 +9,11 @@
     <header class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<%=dataBase[0].imgURL%>)">
         <%- include('navigation') %>
             <div class="text-box">
-                <h1><%=dataBase[0].name %></h1>
+                <h1>
+                    <%=dataBase[0].name %>
+                </h1>
                 <div>
-                    <p>In a 5-day long mountain hike, You get to explore one of Norway's most spectaculare hiking trails, the <span>Trolltunga Trail</span>.<br>Through this 300km long trail you will experiance the wilderness of th hiker's life through camping, mountain-climing, hunting, fishing and much more.</p>
+                    <p>Aurora or the Polar lights, whatever you call it, we provide the best experiance for one of nature's most mesmerizing scenery. Our privet observatory in <span><%=dataBase[0].features.destination %></span> offers the best view for an unforgetable scen and, the best equepment to capture the moment and share it with your friends. </p>
                 </div>
             </div>
     </header>
@@ -21,24 +23,24 @@
             <div>
                 <i class="lni lni-users"></i>
                 <p class="lable">Yearly visitors</p>
-                <p class="text">This tour is taken by <span>1800+</span> people every year from all around the world.</p>
+                <p class="text">This tour is taken by <span>2500+</span> people every year from all around the world.</p>
             </div>
             <div>
                 <i class="lni lni-calendar"></i>
                 <p class="lable">Up-coming</p>
-                <p class="text">The next guided tour is on <span><%= dataBase[1].date%></span> for more info on tour dates contact us.</p>
+                <p class="text">The next guided tour is on <span><%= dataBase[0].date%></span> for more info on tour dates contact us.</p>
             </div>
 
             <div>
                 <i class="lni lni-map"></i>
                 <p class="lable">Starting Point</p>
-                <p class="text"><a href="">Our group assembles in the <span>Skjeggedal</span> village which is also the finish line.</a></p>
+                <p class="text"><a href="">Our group assembles in the <span>Narvik</span> city near the observation site.</a></p>
             </div>
 
             <div>
                 <i class="lni lni-star"></i>
                 <p class="lable">Reviews</p>
-                <p class="text">The <span>4.8/5</span> ratting showes our customer satisfaction with our services.</p>
+                <p class="text">The <span>5/5</span> ratting showes our customer satisfaction with our services.</p>
             </div>
             </div>
     </section>

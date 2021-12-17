@@ -5,12 +5,15 @@
 </head>
 
 <body>
-    <header class="header overlay" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(<%=dataBase[2].imgURL%>)">
+    <header class="header overlay" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<%=dataBase[2].imgURL%>)">
         <%- include('navigation') %>
         <div class="text-box">
             <h1 >
                 <%=dataBase[2].name %>
             </h1>
+            <div>
+                <p>Fancy an escape from the stressful city life and work presiour? There's no better destination than Norway's country side villages where you can reconnect with nature at it's best.</p>
+            </div>
         </div>
     </header>
     <section class="section-z">
@@ -23,19 +26,19 @@
             <div>
                 <i class="lni lni-calendar"></i>
                 <p class="lable">Up-coming</p>
-                <p class="text">The next guided tour is on <span><%= dataBase[1].date%></span> for more info on tour dates contact us.</p>
+                <p class="text">The next guided tour is on <span><%= dataBase[2].date%></span> for more info on tour dates contact us.</p>
             </div>
 
             <div>
                 <i class="lni lni-map"></i>
                 <p class="lable">Starting Point</p>
-                <p class="text"><a href="">Our group assembles in the <span>Skjeggedal</span> village which is also the finish line.</a></p>
+                <p class="text"><a href="">Our group assembles in the <span>Lofoten</span> village which is also the finish line.</a></p>
             </div>
 
             <div>
                 <i class="lni lni-star"></i>
                 <p class="lable">Reviews</p>
-                <p class="text">The <span>4.8/5</span> ratting showes our customer satisfaction with our services.</p>
+                <p class="text">The <span>4.9/5</span> ratting showes our customer satisfaction with our services.</p>
             </div>
             </div>
     </section>
@@ -67,7 +70,8 @@
     </section>
 
     <section class="section-f">
-        <h3>Book a Tour and make your own magical memories</h3>
+        <h3>Book a Tour and make your own magical memories</h3> 
+        <!-- make the gallary with ejs -->
         <div class="grid-container">
             <div class="img-container">
                 <img src="/Assets/Tours/Country-Side-Gallary/1.jpg" alt="">
