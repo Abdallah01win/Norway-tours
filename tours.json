@@ -2,11 +2,14 @@
     {
         "imgURL" : "/Assets/Tours/northan-lights.jpg",
         "name" : "Light Chase",
+        "discription": "Aurora or the Polar lights, whatever you call it, we provide the best experiance for one of nature's most mesmerizing scenery. Our privet observatory in Narvik City offers the best view for an unforgetable scen and, the best equepment to capture the moment and share it with your friends.",
         "features" : {
             "price" : "$650",
             "duration": "3 days",
-            "destination": "Narvik City",
-            "people" : "12 people"
+            "destination": "Our group assembles in the Narvik city near the observation site.",
+            "ratting":" 5/5",
+            "people" : "12 people",
+            "Yvisitors":"2500+"
         },
         "reviews" : [
             {
@@ -58,11 +61,14 @@
     {
         "imgURL" : "/Assets/Tours/mountain.jpg",
         "name" : "Mountain Exploring",
+        "discription": "In a 5-day long mountain hike, You get to explore one of Norway's most spectaculare hiking trails, the Trolltunga Trail. Through this 100km long trail you will experiance the wilderness of th hiker's life through camping, mountain-climing, hunting, fishing and much more.",
         "features" : {
             "price" : "$700",
             "duration": "5 days",
-            "destination": "trolltunga trail",
-            "people" : "8 people"
+            "destination": "Our group assembles in the Skjeggedal village which is also the finish line.",
+            "ratting": "4.8/5",
+            "people" : "8 people",
+            "Yvisitors" :"1400+"
         },
         "reviews" : [
             {
@@ -114,11 +120,14 @@
     {
         "imgURL" : "/Assets/Tours/countryside.jpg",
         "name" : "Country-Side",
+        "discription": "Fancy an escape from the stressful city life and work presiour? There's no better destination than Norway's country side villages where you can reconnect with nature at it's best.",
         "features" : {
             "price" : "$870",
             "duration": "7 days",
-            "destination": "Lofoten",
-            "people" : "6 people"
+            "destination": "Our lodging is in the Lofoten village at the intersaction of mountains chains.",
+            "ratting": " 4.9/5",
+            "people" : "6 people",
+            "Yvisitors": "1800+"
         },
         "reviews" : [
             {

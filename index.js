@@ -18,13 +18,16 @@ app.get('/payment', (req, res) =>{
     res.render('payment', { dataBase })
 })
 app.get('/light-chase', (req, res) =>{
-    res.render('light-chase', { dataBase})
+    const tour = dataBase[0];
+    res.render('tour', { dataBase, tour})
 })
 app.get('/mountain-explorer', (req, res) =>{
-    res.render('mountain-explorer', { dataBase})
+    const tour = dataBase[1];
+    res.render('tour', { dataBase, tour})
 })
 app.get('/country-side', (req, res) =>{
-    res.render('country-side', { dataBase})
+    const tour = dataBase[2];
+    res.render('tour', { dataBase, tour})
 })
 
 function randomNum(max) {

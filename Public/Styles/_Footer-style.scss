@@ -2,6 +2,14 @@ footer {
     padding: 12.8rem 10%;
     background: $sec-dark;
     font-size: 1.6rem;
+    .logo-container{
+        margin-bottom: 2.4rem;
+        img{
+
+            width: 10rem;
+            height: 10rem;
+        }
+    }
     .grid-container {
         @include grid(4);
         align-items: start;

@@ -5,11 +5,17 @@
     font-size: 1.8rem;
     padding: 4rem 8rem;
     #logo {
-        margin-right: 2rem;
+        margin-right: 1.6rem;
+        img{
+            width: 7rem;
+            height: 5rem;
+
+        }
     }
     #nav-list {
         display: flex;
         margin-right: auto;
+        text-transform: uppercase;
         .nav-list-item {
             padding: 0px 2rem;
             cursor: pointer;

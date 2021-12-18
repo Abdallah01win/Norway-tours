@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('head') %>
+</head>
+
+<body>
+    <header class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<%=tour.imgURL%>)">
+        <%- include('navigation') %>
+            <div class="text-box">
+                <h1>
+                    <%=tour.name %>
+                </h1>
+                <div>
+                    <p><%=tour.discription%> </p>
+                </div>
+            </div>
+    </header>
+
+    <section class="section-z">
+        <div class="stats">
+            <div>
+                <i class="lni lni-users"></i>
+                <p class="lable">Yearly visitors</p>
+                <p class="text">This tour is taken by <span><%= tour.features.Yvisitors%></span> people every year from all around the world.</p>
+            </div>
+            <div>
+                <i class="lni lni-calendar"></i>
+                <p class="lable">Up-coming</p>
+                <p class="text">The next guided tour is on <span><%=tour.date%></span> for more info on tour dates contact us.</p>
+            </div>
+
+            <div>
+                <i class="lni lni-map"></i>
+                <p class="lable">Starting Point</p>
+                <p class="text"><%=tour.features.destination%></p>
+            </div>
+
+            <div>
+                <i class="lni lni-star"></i>
+                <p class="lable">Reviews</p>
+                <p class="text">The <span><%=tour.features.ratting%> </span> ratting showes our customer satisfaction with our services.</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="section-d">
+        <h3 >What our customers say about us</h3>
+        <div class="grid-container">
+            <% for( let x = 0; x < 3; x++ ) { %>
+                <div class="review">
+                    <div class="profile">
+                        <div class="user-img"></div>
+                        <div class="user-info">
+                            <a href="#" class="user-name"><%= tour.reviews[x].author %> </a>
+                            <a href="#" class="user-tour"><%=tour.name%></a>
+                        </div>
+                        <div class="user-rating">
+                            <span>
+                                <!-- <i class="lni lni-star"></i> -->
+                                <% for( let i = 0; i < tour.reviews[x].stars; i++ ) { %>
+                                    <i class="lni lni-star-filled"></i>
+                                <% } %>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="review-text"><%=tour.reviews[x].text%></div>
+                    <div class="review-date"><%=tour.reviews[x].date%></div>
+                </div>
+                <% } %>
+        </div>
+    </section>
+
+    <section class="section-f">
+        <h3>Book a Tour and make your own magical memories</h3>
+        <div class="grid-container">
+            <% for( let i = 0; i < tour.gallary.length; i++ ) { %>
+                <div class="img-container">
+                    <img src="<%=tour.gallary[i].imgURL%>" alt="<%=tour.gallary[i].alt%>">
+                </div>
+            <% } %>
+        </div>
+        <div class="cta-box">
+            <div class="btns">
+                <a href="/views/payment.ejs">Book Now</a>
+                <a href="">Contact Us</a >
+            </div>
+        </div>
+    </section>
+
+    <%- include('footer') %>
+
+
+
+
+</body>
+
+</html>
