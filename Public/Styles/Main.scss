@@ -52,6 +52,7 @@ html {
 
     .header-text {
         position: absolute;
+        width: 80%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -65,7 +66,7 @@ html {
             margin-bottom: 6rem;
             .HP-main {
                 display: block;
-                @include heading(6rem, 400, 1.5rem);
+                @include heading(6rem, 700, 1.5rem);
                 margin-bottom: 2rem;
                 animation: moveinright 1000ms 200ms;
             }
@@ -102,6 +103,8 @@ html {
             }
             a {
                 @include button($G-gradiant, $textColor, 1.6rem);
+                display: inline-block;
+                margin-top: 1.8rem;
             }
         }
         #img-box {
@@ -174,7 +177,6 @@ html {
 
 #section-b {
     background: $accent-dark;
-    z-index: 10;
     text-align: center;
     .sec-heading {
         @include primary-headig(3.5rem, 8rem);
@@ -188,6 +190,7 @@ html {
             @include box-shadow();
             font-size: 1.6rem;
             border-radius: 2px;
+            padding-bottom: 3.2rem;
             text-transform: uppercase;
             &__img {
                 img {
@@ -230,7 +233,7 @@ html {
                     &:link,
                     &:visited {
                         padding: 1.2rem 2.4rem;
-                        margin: 1rem 0.8rem 3.2rem 0.8rem;
+                        margin: 1rem 0.8rem 0rem 0.8rem;
                     }
                 }
             }
@@ -238,6 +241,7 @@ html {
     }
     a {
         @include button($textColor, $light-gray, 1.6rem);
+        display: inline-block;
         margin-top: 8rem;
     }
 }
@@ -348,6 +352,7 @@ html {
         .img-container {
             @include box-shadow();
             overflow: hidden;
+            background: black;
             img {
                 width: 32rem;
                 height: 24rem;
@@ -375,3 +380,4 @@ html {
     }
 }
 @import "Footer-style";
+@import "Media-queries";

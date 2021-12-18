@@ -1,0 +1,147 @@
+@media (max-width: 75em) {
+    // 1200 px
+    //fix features section and modify review section
+    .section-z {
+        .stats {
+            @include grid(3);
+            :last-child {
+                grid-column: 2/3;
+            }
+        }
+    }
+
+    #section-a{
+        #grid-container{
+            #img-box{
+                img{
+                    max-width: 65%;
+                    &:first-of-type {
+                        left: 0;
+                        top: -16rem;
+                    }
+                    &:last-of-type {
+                        top: -0rem;
+                        left: 17rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #section-b {
+        .grid-container {
+            .tour-card__button{
+                a {
+                    &:link,
+                    &:visited {  
+                        
+                            margin-bottom: 1rem;
+                                          
+                    }
+                }
+            }
+        }
+    }
+
+    #section-c{
+        .grid-container{
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 0;
+        }
+    }
+    .section-d {
+        .grid-container {
+            .review {
+                width: 48%;
+            }
+        }
+    }
+
+    .section-f {
+        .grid-container {
+            @include grid(2);
+            .img-container {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 62.5em) {
+    // 1000px
+    html {
+        font-size: 56.25%;
+    }
+    .header {
+        #nav {
+            #nav-list,
+            .buttons {
+                opacity: 0;
+                pointer-events: none;
+                visibility: hidden;
+            }
+            .icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 5rem;
+                width: 5rem;
+                cursor: pointer;
+                .lni {
+                    font-size: 4.4rem;
+                    &:last-of-type {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .section-z {
+        .stats {
+            @include grid(2);
+        }
+    }
+    #section-a{
+        #grid-container{
+            #img-box{
+                img{
+                    max-width: 65%;
+                    &:first-of-type {
+                        left: 0;
+                        top: -16rem;
+                    }
+                    &:last-of-type {
+                        top: -5rem;
+                        left: 17rem;
+                    }
+                }
+            }
+        }
+    }
+    #section-b {
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .tour-card{
+                width: 40%;
+            }
+        }
+    }
+    .section-d {
+        .grid-container {
+            .review {
+                width: 75%;
+            }
+        }
+    }
+    footer {
+        .grid-container {
+            @include grid(2);
+        }
+    }
+}
+// media at 780

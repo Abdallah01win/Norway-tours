@@ -1,10 +1,14 @@
 .grid-container {
-    @include grid(3);
-    column-gap: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.2rem;
     .review {
+        width: 30%;
         background: $dark-gray;
         padding: 3.2rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         @include box-shadow();
         .profile {
             display: flex;
@@ -38,6 +42,7 @@
         }
         .review-text {
             margin: 1.6rem 0px;
+            line-height: 1.4;
         }
         .review-date {
             color: $light-gray;
