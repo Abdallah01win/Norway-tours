@@ -1,5 +1,6 @@
 .grid-container {
     @include grid(3);
+    column-gap: 3.2rem;
     .review {
         background: $dark-gray;
         padding: 3.2rem;
@@ -8,8 +9,15 @@
         .profile {
             display: flex;
             align-items: flex-start;
-            /*.user-img {
-            }*/
+            .user-img {
+                img{
+
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 200rem;
+                    margin-right: 1.2rem;
+                }
+            }
             .user-info {
                 .user-name {
                     display: block;

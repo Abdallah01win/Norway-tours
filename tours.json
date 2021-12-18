@@ -6,26 +6,29 @@
         "features" : {
             "price" : "$650",
             "duration": "3 days",
-            "destination": "Our group assembles in the Narvik city near the observation site.",
             "ratting":" 5/5",
             "people" : "12 people",
+            "destination": "Our group assembles in the Narvik city near the observation site.",
             "Yvisitors":"2500+"
         },
         "reviews" : [
             {
-                "author" : "Pier Gasly",
+                "author" : "Jake Dunn",
+                "profile": "/Assets/Customers/14.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "17/10/2021",
                 "stars" : "5"
             },
             {
-                "author" : "Lucka Modric",
+                "author" : "Deborah Johnson",
+                "profile": "/Assets/Customers/17.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "15/12/2021",
                 "stars" : "5"
             },
             {
-                "author" : "Pier Gasly",
+                "author" : "Ian Carter",
+                "profile": "/Assets/Customers/32.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "20/11/2021",
                 "stars" : "5"
@@ -65,26 +68,29 @@
         "features" : {
             "price" : "$700",
             "duration": "5 days",
-            "destination": "Our group assembles in the Skjeggedal village which is also the finish line.",
             "ratting": "4.8/5",
             "people" : "8 people",
+            "destination": "Our group assembles in the Skjeggedal village which is also the finish line.",
             "Yvisitors" :"1400+"
         },
         "reviews" : [
             {
-                "author" : "Pier Gasly",
+                "author" : "Emily Reed",
+                "profile": "/Assets/Customers/63.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "17/10/2021",
                 "stars" : "5"
             },
             {
-                "author" : "Lucka Modric",
+                "author" : "Mary Garcia",
+                "profile": "/Assets/Customers/65.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "15/12/2021",
                 "stars" : "4"
             },
             {
-                "author" : "Pier Gasly",
+                "author" : "Peter Howard",
+                "profile": "/Assets/Customers/69.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "20/11/2021",
                 "stars" : "5"
@@ -124,26 +130,29 @@
         "features" : {
             "price" : "$870",
             "duration": "7 days",
-            "destination": "Our lodging is in the Lofoten village at the intersaction of mountains chains.",
             "ratting": " 4.9/5",
             "people" : "6 people",
+            "destination": "Our lodging is in the Lofoten village at the intersaction of mountains chains.",
             "Yvisitors": "1800+"
         },
         "reviews" : [
             {
-                "author" : "Pier Gasly",
+                "author" : "Thomas Morales",
+                "profile": "/Assets/Customers/91.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "17/10/2021",
                 "stars" : "5"
             },
             {
-                "author" : "Lucka Modric",
+                "author" : "Sarah Price",
+                "profile": "/Assets/Customers/76.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "15/12/2021",
                 "stars" : "4"
             },
             {
-                "author" : "Pier Gasly",
+                "author" : "Lynn Coleman",
+                "profile": "/Assets/Customers/78.jpg",
                 "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
                 "date": "20/11/2021",
                 "stars" : "5"

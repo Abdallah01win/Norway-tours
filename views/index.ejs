@@ -52,9 +52,13 @@
                         </div>
                         <ul class="tour-card__features">
                             <% for (const feature in dataBase[i]['features']){%>
-                                <li class="tour-card__features__feature">
-                                    <%= dataBase[i]['features'][feature] %>
-                                </li>
+                                <% if (dataBase[i]['features'][feature] === dataBase[i].features.destination) { %>
+                                 <% break %> 
+                                <% } else {%>
+                                    <li class="tour-card__features__feature">
+                                        <%= dataBase[i]['features'][feature] %>
+                                    </li>
+                                <% }  %>
                                 <% } %>
                         </ul>
                         <div class="tour-card__button">

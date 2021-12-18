@@ -2,7 +2,9 @@
     <% for( let x = 0; x < 3; x++ ) { %>
     <div class="review">
         <div class="profile">
-            <div class="user-img"></div>
+            <div class="user-img">
+                <img src="<%= dataBase[x].reviews[0].profile %> " alt="">
+            </div>
             <div class="user-info">
                 <a href="#" class="user-name"><%= dataBase[x].reviews[0].author %> </a>
                 <a href="#" class="user-tour"><%=dataBase[x].name%></a>

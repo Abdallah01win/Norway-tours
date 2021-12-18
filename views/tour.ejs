@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <%- include('head') %>
 </head>
@@ -51,7 +50,9 @@
             <% for( let x = 0; x < 3; x++ ) { %>
                 <div class="review">
                     <div class="profile">
-                        <div class="user-img"></div>
+                        <div class="user-img">
+                            <img src="<%= tour.reviews[x].profile%> " alt="">
+                        </div>
                         <div class="user-info">
                             <a href="#" class="user-name"><%= tour.reviews[x].author %> </a>
                             <a href="#" class="user-tour"><%=tour.name%></a>
