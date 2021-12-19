@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3.2rem;
+    gap: 1.6rem;
     .review {
         width: 30%;
         background: $dark-gray;
@@ -35,17 +35,22 @@
                     }
                 }
             }
-            .user-rating {
-                margin-left: auto;
-                @include gradiant();
-            }
+            
         }
         .review-text {
             margin: 1.6rem 0px;
             line-height: 1.4;
         }
-        .review-date {
-            color: $light-gray;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            .review-date {
+                color: $light-gray;
+            }
+            .user-rating {
+                margin-left: auto;
+                @include gradiant();
+            }
         }
     }
 }

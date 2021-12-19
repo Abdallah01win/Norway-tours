@@ -96,7 +96,7 @@ html {
                 @include sec-heading(1.8rem, 2rem);
             }
             p {
-                font-size: 1.6rem;
+                font-size: 2rem;
                 color: $sec-text-color;
                 line-height: 1.6;
                 margin-bottom: 3rem;
@@ -178,6 +178,7 @@ html {
 #section-b {
     background: $accent-dark;
     text-align: center;
+    padding: 12.8rem 5%;
     .sec-heading {
         @include primary-headig(3.5rem, 8rem);
     }
