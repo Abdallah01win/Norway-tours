@@ -57,17 +57,20 @@
                             <a href="#" class="user-name"><%= tour.reviews[x].author %> </a>
                             <a href="#" class="user-tour"><%=tour.name%></a>
                         </div>
-                        <div class="user-rating">
-                            <span>
-                                <!-- <i class="lni lni-star"></i> -->
-                                <% for( let i = 0; i < tour.reviews[x].stars; i++ ) { %>
-                                    <i class="lni lni-star-filled"></i>
-                                <% } %>
-                            </span>
-                        </div>
+                        
                     </div>
                     <div class="review-text"><%=tour.reviews[x].text%></div>
+                    <div class="container">
                     <div class="review-date"><%=tour.reviews[x].date%></div>
+                    <div class="user-rating">
+                        <span>
+                            <!-- <i class="lni lni-star"></i> -->
+                            <% for( let i = 0; i < tour.reviews[x].stars; i++ ) { %>
+                                <i class="lni lni-star-filled"></i>
+                            <% } %>
+                        </span>
+                    </div>
+                </div>
                 </div>
                 <% } %>
         </div>
