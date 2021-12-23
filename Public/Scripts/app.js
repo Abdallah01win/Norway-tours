@@ -9,6 +9,7 @@ const closeIcon = document.getElementById('close');
 const navList = document.getElementById('nav-list');
 const nav = document.getElementById('nav');
 const navButtons = document.querySelector('.buttons');
+const logo = document.getElementById('logo').firstElementChild;
 
 if (logInBTN !== null) {
 
@@ -63,7 +64,7 @@ menue.addEventListener('click', () => {
     closeIcon.classList.add('show-icon');
     navList.classList.add('show-menue');
     navButtons.classList.add('show-buttons');
-    //change the green logo to the white one by changing logo img src
+    logo.setAttribute('src', '/Assets/W-logo.png');
 });
 
 closeIcon.addEventListener('click', () => {
@@ -71,5 +72,6 @@ closeIcon.addEventListener('click', () => {
     closeIcon.classList.remove('show-icon');
     navList.classList.remove('show-menue');
     navButtons.classList.remove('show-buttons');
+    logo.setAttribute('src', '/Assets/G-logo.png');
 })
 
