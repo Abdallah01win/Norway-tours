@@ -3,7 +3,7 @@ footer {
     background: $sec-dark;
     font-size: 1.6rem;
     .logo-container{
-        margin-bottom: 2.4rem;
+        margin-bottom: 4.8rem;
         img{
 
             width: 10rem;
@@ -39,9 +39,11 @@ footer {
                     @include gradiant();
                     font-size: 3rem;
                     i {
-                        cursor: pointer;
                         margin-right: 1.8rem;
                         margin-top: 1.8rem;
+                        &:hover{
+                            cursor: pointer;
+                        }
                     }
                 }
             }

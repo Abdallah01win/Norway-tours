@@ -6,43 +6,83 @@
     padding: 1.6rem 10%;
     #logo {
         margin-right: 1.6rem;
-        img{
+        z-index: 101;
+        img {
             width: 7rem;
             height: 5rem;
-
         }
     }
     #nav-list {
         display: flex;
-        margin-right: auto;
+        width: 100%;
         text-transform: uppercase;
         font-weight: 700;
-        letter-spacing: .13rem;
+        letter-spacing: 0.13rem;
+        margin-right: auto;
+
         .nav-list-item {
             padding: 0px 2rem;
             cursor: pointer;
             &:last-of-type {
                 padding: 0px 0px 0px 1rem;
             }
-            &:hover{
-                transform: scale(1.1)
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .buttons {
+            margin-left: auto;
+            a {
+                @include pri-and-sec-buttons();
+                &:link,
+                &:visited {
+                    padding: 1rem 3rem;
+                    font-size: 1.6rem;
+                }
+                &:first-of-type {
+                    margin-right: 2rem;
+                }
             }
         }
     }
-    .buttons {
-        a {
-            @include pri-and-sec-buttons();
-            &:link,
-            &:visited {
-                padding: 1rem 3rem;
-                font-size: 1.6rem;
-            }
-            &:first-of-type {
-                margin-right: 2rem;
-            }
+    .show-menue {
+        height: 100vh;
+        background: linear-gradient(120deg, $light-green, $dark-green);
+        z-index: 100;
+        text-align: center;
+        row-gap: 3.2rem;
+        transition: all 400ms ease-out;
+        
+        width: 100% !important;
+        opacity: 1 !important;
+        pointer-events: all !important;
+        visibility: initial !important;
+        top: 0%;
+        left: 0%;
+        .nav-list-item {
+            transform: translateY(20rem);
+        }
+
+        .buttons {
+            position: absolute;
+            width: 100%;
+            margin: 0 auto;
+            justify-self: center;
+        bottom: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            //makebuttons white from media queries
         }
     }
-    .icons{
+
+    .icons {
         display: none;
+    }
+    .hide-icon {
+        display: none;
+    }
+    .show-icon {
+        display: initial !important;
+        z-index: 101;
     }
 }
