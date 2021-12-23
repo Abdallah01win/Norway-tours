@@ -1,4 +1,4 @@
-const express = require('express');
+ const express = require('express');
 const app = express();
 const dataBase = require('./tours.json');
 const path = require('path');
@@ -93,7 +93,7 @@ const getDate = async () => {
     }
 }
 getDate();
-app.listen(3000, () => {
+app.listen(process.env.port || 3000, () => {
     console.log('listening on port 3000');
 })
 
