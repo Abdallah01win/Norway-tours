@@ -196,7 +196,7 @@ html {
             &__img {
                 img {
                     width: 100%;
-                    height: 18rem;
+                    height: 20rem;
                     border-radius: 2px;
                 }
             }
@@ -247,7 +247,6 @@ html {
     }
 }
 #section-c {
-    //z-index: -1;
     position: relative;
     background: $accent-dark;
     .grid-container {

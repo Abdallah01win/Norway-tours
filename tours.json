@@ -15,21 +15,21 @@
             {
                 "author" : "Jake Dunn",
                 "profile": "/Assets/Customers/14.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "The most facinating thing I have ever seen. The aurora lights are the closest thing to magic. Simply magnificant.",
                 "date": "17/10/2021",
                 "stars" : "5"
             },
             {
                 "author" : "Deborah Johnson",
                 "profile": "/Assets/Customers/17.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "The observatory was perfectly located for us to get a wounderful view of the lights. I'll sure be comming back.",
                 "date": "15/12/2021",
                 "stars" : "5"
             },
             {
                 "author" : "Ian Carter",
                 "profile": "/Assets/Customers/32.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "Such an amazing experiance thanks to all the staff and guides were great and made it very easy to enjoy our trip.",
                 "date": "20/11/2021",
                 "stars" : "5"
             }
@@ -77,21 +77,21 @@
             {
                 "author" : "Emily Reed",
                 "profile": "/Assets/Customers/63.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "I never had so much fun in just one trip. The tour makes it easy to see and do so many things without rushing through them.",
                 "date": "17/10/2021",
                 "stars" : "5"
             },
             {
                 "author" : "Mary Garcia",
                 "profile": "/Assets/Customers/65.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "One of the most rewarding hikes I have ever taken. The track is just a joy to hike in with its amazing sceans and views.",
                 "date": "15/12/2021",
                 "stars" : "4"
             },
             {
                 "author" : "Peter Howard",
                 "profile": "/Assets/Customers/69.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "The camping sites are perfectly picked so they allow you to rest while still doing so many fun things. I simply loved it.",
                 "date": "20/11/2021",
                 "stars" : "5"
             }

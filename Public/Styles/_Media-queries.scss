@@ -302,6 +302,16 @@
                     font-size: 2.2rem;
                 }
             }
+            .form-box{
+                form{
+                    .form--input{
+                        input{
+                            padding: 1.2rem 1.6rem;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
         }
     }
     .section-z {
@@ -396,7 +406,6 @@
         }
     }
     #section-b {
-        //padding: 9.6rem ;
         .grid-container {
             @include grid(1);
             justify-items: center;

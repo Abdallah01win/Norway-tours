@@ -79,7 +79,7 @@ const getDate = async () => {
                 }
             }
         }
-        
+               
 //for each tour in DB, get user date and append it to tour's info
         for (const tour in dataBase) {
             randomDate(30)
