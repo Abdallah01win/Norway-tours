@@ -72,7 +72,11 @@ html {
             }
             .HP-secondary {
                 display: block;
-                @include heading(2rem, 700, 1.74rem);
+                //@include heading(2rem, 700, 1.74rem);
+                font-size: 2.4rem;
+                font-weight: 500;
+                line-height: 1.4;
+                letter-spacing: 0.8rem;
                 animation: moveinleft 1000ms 200ms;
             }
         }
