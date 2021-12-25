@@ -139,23 +139,23 @@
             {
                 "author" : "Thomas Morales",
                 "profile": "/Assets/Customers/91.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "Very relaxing lodgings in a beutiful and quiet town. All the people were nice and I had a wounderfull time with my family.",
                 "date": "17/10/2021",
                 "stars" : "5"
             },
             {
                 "author" : "Sarah Price",
                 "profile": "/Assets/Customers/76.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "This trip was transformative in my personal and professional life. By reconnecting with nature, I managed to find my self again.",
                 "date": "15/12/2021",
-                "stars" : "4"
+                "stars" : "5"
             },
             {
                 "author" : "Lynn Coleman",
                 "profile": "/Assets/Customers/78.jpg",
-                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia aperiam dolorum tempora, debitis explicabo?",
+                "text" : "The perfect gataway alone or with loved ones. Lake walks and the local food were my favorit part I loved every moment.",
                 "date": "20/11/2021",
-                "stars" : "5"
+                "stars" : "4"
             }
         ],
         "gallary": [
