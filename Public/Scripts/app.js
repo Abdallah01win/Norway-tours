@@ -3,6 +3,7 @@ const signUpBTN = document.querySelector('#sec-sign-up-btn');
 const signUpForm = document.getElementById('sign-up-form');
 const logInForm = document.getElementById('log-in-form');
 const detailsBtn = document.querySelectorAll('.details-btn');
+const bookBtn = document.querySelectorAll('.book-btn');
 const headr = document.getElementsByTagName('header');
 const menue = document.getElementById('menue');
 const closeIcon = document.getElementById('close');
@@ -38,27 +39,49 @@ if (logInBTN !== null) {
         }, 300);
         signUpForm.classList.add('animate-up');
     })
-    detailsBtn.forEach(btn => {
-        btn.addEventListener('click', function (e) {
-            let index = undefined;
-            const container = this.parentElement.parentElement.parentElement;
-            const card = this.parentElement.parentElement;
-
-            const tourOne = container.firstElementChild;
-            const tourTow = tourOne.nextElementSibling;
-            const tourThree = tourTow.nextElementSibling;
-            if (card === tourOne) {
-                btn.setAttribute("href", "/light-chase")
-            }
-            else if (card === tourTow) {
-                btn.setAttribute("href", "/mountain-explorer")
-            }
-            else if (card === tourThree) {
-                btn.setAttribute("href", "/country-side")
-            }
-        })
-    });
 }
+//make eventlistener a function with routs as perames
+detailsBtn.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+        let index = undefined;
+        const container = this.parentElement.parentElement.parentElement;
+        const card = this.parentElement.parentElement;
+
+        const tourOne = container.firstElementChild;
+        const tourTow = tourOne.nextElementSibling;
+        const tourThree = tourTow.nextElementSibling;
+        if (card === tourOne) {
+            btn.setAttribute("href", "/light-chase")
+        }
+        else if (card === tourTow) {
+            btn.setAttribute("href", "/mountain-explorer")
+        }
+        else if (card === tourThree) {
+            btn.setAttribute("href", "/country-side")
+        }
+    })
+});
+bookBtn.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+        let index = undefined;
+        const container = this.parentElement.parentElement.parentElement;
+        const card = this.parentElement.parentElement;
+
+        const tourOne = container.firstElementChild;
+        const tourTow = tourOne.nextElementSibling;
+        const tourThree = tourTow.nextElementSibling;
+        if (card === tourOne) {
+            btn.setAttribute("href", "/book-light-chase")
+        }
+        else if (card === tourTow) {
+            btn.setAttribute("href", "/book-mountain-explorer")
+        }
+        else if (card === tourThree) {
+            btn.setAttribute("href", "/book-country-side")
+        }
+    })
+});
+
 menue.addEventListener('click', () => {
     menue.classList.add('hide-icon');
     closeIcon.classList.add('show-icon');

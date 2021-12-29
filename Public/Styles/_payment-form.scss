@@ -1,0 +1,50 @@
+form {
+    position: absolute;
+    width: fit-content;
+    padding: 4rem;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $dark-gray;
+    font-size: 1.6rem;
+    .form--input {
+        display: flex;
+        flex-direction: column;
+        label {
+            font-weight: 500;
+        }
+        input {
+            @include form-input();
+        }
+        .credit-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i {
+                font-size: 4rem;
+            }
+        }
+    }
+    .small-form {
+        display: flex;
+        column-gap: 2.4rem;
+    }
+    .form--check {
+        margin-bottom: 2.4rem;
+        span {
+            .terms {
+                @include gradiant();
+                cursor: pointer;
+            }
+        }
+    }
+    .form--buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 2.4rem
+    }
+    button {
+        @include pri-and-sec-buttons();
+    }
+}

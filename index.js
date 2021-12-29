@@ -11,12 +11,8 @@ app.use(express.static('Public'));
 app.get('/', (req, res) => {
     res.render('index', { dataBase});
 })
-app.get('/tours', (req, res) =>{
-    res.render('tours', { dataBase })
-})
-app.get('/payment', (req, res) =>{
-    res.render('payment', { dataBase })
-})
+
+
 app.get('/light-chase', (req, res) =>{
     const tour = dataBase[0];
     res.render('tour', { dataBase, tour})
@@ -30,9 +26,24 @@ app.get('/country-side', (req, res) =>{
     res.render('tour', { dataBase, tour})
 })
 
+
+app.get('/book-light-chase', (req, res) =>{
+    const tour = dataBase[0];
+    res.render('payment', { dataBase, tour})
+})
+app.get('/book-mountain-explorer', (req, res) =>{
+    const tour = dataBase[1];
+    res.render('payment', { dataBase, tour})
+})
+app.get('/book-country-side', (req, res) =>{
+    const tour = dataBase[2];
+    res.render('payment', { dataBase, tour})
+})
+
 function randomNum(max) {
     return Math.floor(Math.random() * max)
 }
+
 // Async function to get the user's Date
 const getDate = async () => {
     try {
