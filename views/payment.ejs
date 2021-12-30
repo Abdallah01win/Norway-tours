@@ -5,8 +5,8 @@
         <header class="header"
             style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<%=tour.imgURL%>)">
             <%- include('navigation') %>
-
-                <form action="">
+            <form action="">
+                    <h3><%= tour.name %> </h3>
                     <div class="form--input">
                         <label for="Name-on-card">Name On Card</label>
                         <input type="text" name="Name-on-card" required placeholder="Name On Card">
@@ -17,7 +17,6 @@
                             <span>
                                 <i class="lni lni-mastercard"></i>
                                 <i class="lni lni-visa"></i>
-                                <i class="lni lni-google-pay"></i>
                         </span></label>
                         <input type="number" name="credit-card" required placeholder="XXXX-XXXX-XXXX-XXXX">
                     </div>
@@ -37,7 +36,6 @@
                     </div>
                     <div class="form--buttons">
                         <button >Pay <%= tour.features.price %></button>
-                        <button >Contact Us</button>
                     </div>
                 </form>
         </header>
