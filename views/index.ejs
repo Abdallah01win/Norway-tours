@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include('head') %> 
+    <%- include('head') %>
 </head>
 
 <body>
     <!-- --- Header Section --- -->
     <header class="header">
-        <%- include('navigation') %> 
-        <div class="header-text">
-            <h1 class="heading-primary">
-                <span class="HP-main">Norway Tours</span>
-                <span class="HP-secondary">Gateway to Norway's heavans</span>
-            </h1>
-            <a href="#section-b">Discove our tours</a>
-        </div>
+        <%- include('navigation') %>
+            <div class="header-text">
+                <h1 class="heading-primary">
+                    <span class="HP-main">Norway Tours</span>
+                    <span class="HP-secondary">Gateway to Norway's heavans</span>
+                </h1>
+                <a href="#section-b">Discove our tours</a>
+            </div>
     </header>
 
     <!-- --- Section A --- -->
@@ -23,7 +24,9 @@
         <div id="grid-container">
             <div id="text-box">
                 <h3>Discover Norway's miracullas nature</h3>
-                    <p>Our tours are designed to make sure you explore each and every aspect of Norway's magnificant wilderness to the fullest through a wide range of activities that will put you at the heart of nature and guarentie an unforgetable experiance.</p>
+                <p>Our tours are designed to make sure you explore each and every aspect of Norway's magnificant
+                    wilderness to the fullest through a wide range of activities that will put you at the heart of
+                    nature and guarentie an unforgetable experiance.</p>
                 <a href="#">Learn More &rarr;</a>
             </div>
             <div id="img-box">
@@ -38,7 +41,7 @@
         <h3 class="sec-heading">Make the most out of Norway's heavens</h3>
         <div class="grid-container">
             <%let card=0 %>
-                <% for (let i = 0; i < dataBase.length; i++){ %>
+                <% for (let i=0; i < dataBase.length; i++){ %>
                     <figure class="tour-card">
                         <div class="tour-card__img">
                             <img src="<%=dataBase[i].imgURL%>" alt="card image">
@@ -48,20 +51,18 @@
                         </div>
                         <ul class="tour-card__features">
                             <% for (const feature in dataBase[i]['features']){%>
-                                <% if (dataBase[i]['features'][feature] === dataBase[i].features.destination) { %>
-                                 <% break %> 
-                                <% } else {%>
-                                    <li class="tour-card__features__feature">
-                                        <%= dataBase[i]['features'][feature] %>
-                                    </li>
-                                <% }  %>
-                                <% } %>
+                                <% if (dataBase[i]['features'][feature]===dataBase[i].features.destination) { %>
+                                    <% break %>
+                                        <% } else {%>
+                                            <li class="tour-card__features__feature">
+                                                <%= dataBase[i]['features'][feature] %>
+                                            </li>
+                                            <% } %>
+                                                <% } %>
                         </ul>
                         <div class="tour-card__button">
                             <a id="payment-btn" class="book-btn" href="">Book Now</a>
-                            <!-- <form action="/tour" method="post"> -->
-                                <a class="details-btn" href="" >Details</a>
-                            <!-- </form> -->
+                            <a class="details-btn" href="">Details</a>
                         </div>
                     </figure>
                     <% card+=1 %>
@@ -70,37 +71,31 @@
                                 <%} %>
                                     <% } %>
         </div>
-        <a href="/tours">Discover All Tours</a>
+        <a href="">Discover All Tours</a>
     </section>
 
     <section class="section-d">
         <h3 class="sec-heading">What our customers say about us</h3>
-        <%- include('review-section') %> 
+        <%- include('review-section') %>
     </section>
-    
+
     <!-- --- Section C --- -->
     <section id="section-c">
         <div class="grid-container">
             <div class="img-box">
                 <h3>Let's embark on a life-changing journy!</h3>
-                <p>Sign up now and pick a tour to explore a country like no other and feel its majestic nature. You also get notified about our exclusive discount offers, giveaways, and upcoming events.</p>
+                <p>Sign up now and pick a tour to explore a country like no other and feel its majestic nature. You also
+                    get notified about our exclusive discount offers, giveaways, and upcoming events.</p>
             </div>
             <div class="form-box">
                 <%- include ('sign-up-form') -%>
-                <%- include ('log-in-form') -%>
+                    <%- include ('log-in-form') -%>
             </div>
         </div>
     </section>
-<%- include('footer') -%> 
+    <%- include('footer') -%>
 
-
-
-
-
-
-
-
-    <script type="module" src="Scripts/app.js"></script>
+        <script type="module" src="Scripts/app.js"></script>
 </body>
 
 </html>

@@ -12,8 +12,9 @@ const nav = document.getElementById('nav');
 const navButtons = document.querySelector('.buttons');
 const logo = document.getElementById('logo').firstElementChild;
 
-if (logInBTN !== null) {
 
+//Sign Up and Loging in forms animation
+if (logInBTN !== null) {
     logInBTN.addEventListener('click', (e) => {
         e.preventDefault();
         signUpForm.classList.remove('animate-up');
@@ -40,13 +41,14 @@ if (logInBTN !== null) {
         signUpForm.classList.add('animate-up');
     })
 }
-//make eventlistener a function with routs as perames
+
+//Set routs for cards' details buttons
 detailsBtn.forEach(btn => {
     btn.addEventListener('click', function (e) {
         let index = undefined;
         const container = this.parentElement.parentElement.parentElement;
         const card = this.parentElement.parentElement;
-
+        
         const tourOne = container.firstElementChild;
         const tourTow = tourOne.nextElementSibling;
         const tourThree = tourTow.nextElementSibling;
@@ -61,6 +63,8 @@ detailsBtn.forEach(btn => {
         }
     })
 });
+
+//Set routs for cards' booking buttons
 bookBtn.forEach(btn => {
     btn.addEventListener('click', function (e) {
         let index = undefined;
@@ -82,6 +86,7 @@ bookBtn.forEach(btn => {
     })
 });
 
+// Toggle display of navigation menue
 menue.addEventListener('click', () => {
     menue.classList.add('hide-icon');
     closeIcon.classList.add('show-icon');
@@ -97,4 +102,3 @@ closeIcon.addEventListener('click', () => {
     navButtons.classList.remove('show-buttons');
     logo.setAttribute('src', '/Assets/G-logo.png');
 })
-
