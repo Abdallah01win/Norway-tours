@@ -11,7 +11,24 @@ const navList = document.getElementById('nav-list');
 const nav = document.getElementById('nav');
 const navButtons = document.querySelector('.buttons');
 const logo = document.getElementById('logo').firstElementChild;
+const bookTour = document.getElementById('BookThisTour');
 
+// Toggle display of navigation menue
+menue.addEventListener('click', () => {
+    menue.classList.add('hide-icon');
+    closeIcon.classList.add('show-icon');
+    navList.classList.add('show-menue');
+    navButtons.classList.add('show-buttons');
+    logo.setAttribute('src', '/Assets/W-logo.png');
+});
+
+closeIcon.addEventListener('click', () => {
+    menue.classList.remove('hide-icon');
+    closeIcon.classList.remove('show-icon');
+    navList.classList.remove('show-menue');
+    navButtons.classList.remove('show-buttons');
+    logo.setAttribute('src', '/Assets/G-logo.png');
+})
 
 //Sign Up and Loging in forms animation
 if (logInBTN !== null) {
@@ -85,20 +102,3 @@ bookBtn.forEach(btn => {
         }
     })
 });
-
-// Toggle display of navigation menue
-menue.addEventListener('click', () => {
-    menue.classList.add('hide-icon');
-    closeIcon.classList.add('show-icon');
-    navList.classList.add('show-menue');
-    navButtons.classList.add('show-buttons');
-    logo.setAttribute('src', '/Assets/W-logo.png');
-});
-
-closeIcon.addEventListener('click', () => {
-    menue.classList.remove('hide-icon');
-    closeIcon.classList.remove('show-icon');
-    navList.classList.remove('show-menue');
-    navButtons.classList.remove('show-buttons');
-    logo.setAttribute('src', '/Assets/G-logo.png');
-})

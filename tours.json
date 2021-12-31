@@ -2,6 +2,7 @@
     {
         "imgURL" : "/Assets/Tours/northan-lights.jpg",
         "name" : "Light Chase",
+        "booklink" : "/book-light-chase",
         "discription": "Aurora or the Polar lights, whatever you call it, we provide the best experiance for one of nature's most mesmerizing scenery. Our privet observatory in Narvik City offers the best view for an unforgetable scen and, the best equepment to capture the moment and share it with your friends.",
         "features" : {
             "price" : "$650",
@@ -64,6 +65,7 @@
     {
         "imgURL" : "/Assets/Tours/mountain.jpg",
         "name" : "Mountain Exploring",
+        "booklink" : "/book-mountain-explorer",
         "discription": "In a 5-day long mountain hike, You get to explore one of Norway's most spectaculare hiking trails, the Trolltunga Trail. Through this 100km long trail you will experiance the wilderness of th hiker's life through camping, mountain-climing, hunting, fishing and much more.",
         "features" : {
             "price" : "$700",
@@ -126,6 +128,7 @@
     {
         "imgURL" : "/Assets/Tours/countryside.jpg",
         "name" : "Country-Side",
+        "booklink" : "/book-country-side",
         "discription": "Fancy an escape from the stressful city life and work presiour? There's no better destination than Norway's country side villages where you can reconnect with nature at it's best.",
         "features" : {
             "price" : "$870",
